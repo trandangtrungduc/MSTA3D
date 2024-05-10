@@ -207,7 +207,7 @@ CLASS_LABELS_200 = (
 )
 
 class ScanNet200Dataset(ScanNetDataset):
-    BENCHMARK_SEMANTIC_IDXS = [
+    NYU_ID = [
         1,
         3,
         2,

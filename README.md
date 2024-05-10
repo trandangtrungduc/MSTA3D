@@ -4,11 +4,11 @@
 
 Tran Dang Trung Duc, Byeongkeun Kang, Yeejin Lee
 
-## :rocket: Overall Architecture
+## Overall Architecture
 
 <img src="docs\overall_structure.png" />
 
-## :tada: Introduction
+## Introduction
 
 Most existing methods suffer from two drawbacks:
 * Over-segmentation issue on large instances and background noise.
@@ -18,11 +18,11 @@ Solution:
 * Using multi-scale superpoint combined with a twin-attention decoder to capture objects of different size and shape.
 * Using spatial constraint regularizer helps the model create a more reliable superpoint mask.
 
-<img src="docs\snapshot.png" alt="snapshot" style="zoom:50%;" />
+<img src="docs\benchmark_snapshot.png" alt="snapshot" style="zoom:50%;" />
 
 The snapshot from ScanNetV2 benchmark testing server on 11/04/2024.
 
-## :computer: Environments Installing
+## Installation
 
 Requirements
 
@@ -66,7 +66,7 @@ The following installation suppose `python=3.8` `pytorch=1.10.0` and `cuda=11.3`
   ```
 - Refer to `msta3d_environment.yml` for details of the environment we used.
 
-## :nut_and_bolt: Data Preprocessing
+## Data Preprocessing
 
 ### ScanNetV2 dataset
 
@@ -121,7 +121,7 @@ MSTA3D
 │   │   ├── val
 ```
 
-## :card_index: Pretrained Model
+## Pretrained Model
 
 Download [SSTNet](https://drive.google.com/file/d/1vucwdbm6pHRGlUZAYFdK9JmnPVerjNuD/view?usp=sharing) pretrained model
 
@@ -131,7 +131,7 @@ mkdir checkpoints
 mv ${SSTNET_PRETRAINED_PATH}/sstnet_pretrain.pth checkpoints/
 ```
 
-## :hourglass: Training
+## Training
 ScanNetV2 dataset
 
 ```
@@ -143,7 +143,7 @@ ScanNet200 dataset
 python tools/train.py configs/msta3d_scannet200.yaml
 ```
 
-## :bulb: Testing
+## Testing
 ScannetV2 dataset
 ```
 python tools/test.py configs/msta3d_scannet.yaml ${CHECKPOINT_PATH}/msta3d_scannet.pth
@@ -153,7 +153,7 @@ ScanNet200 dataset
 python tools/test.py configs/msta3d_scannet200.yaml ${CHECKPOINT_PATH}/ msta3d_scannet200.pth
 ```
 
-## :scroll: Checkpoints
+## Checkpoints
 The results in the table may change a little because of randomness
 
 | Dataset | mAP | mAP<sub>50</sub> | mAP<sub>25</sub>  | Download |
@@ -162,7 +162,7 @@ The results in the table may change a little because of randomness
 | ScanNet200 | 26.2 | 35.2 | 40.1 | [model]() &#124; [log](exps/scannet200/msta3d_scannet200/msta3d_scannet200.log) &#124;[config](exps/scannet200/msta3d_scannet200/msta3d_scannet200.yaml) |
 
 
-## :art: Visualization
+## Visualization :art:
 
 Before visualization, write the output results of inference
 
@@ -179,11 +179,11 @@ python tools/visualize.py --prediction_path output/ --room_name ${SCENE_NAME}
 
 You can visualize by Open3D or MeshLab with `.ply` file.
 
-## :fountain: Examples
+## Examples
 
 <img src="docs\Example.png" />
 
-## :bookmark: Citation
+## Citation
 
 If you find this work useful in your research, please cite:
 
@@ -197,6 +197,6 @@ Year = {2024},
 }
 ```
 
-## :pencil: Acknowledgement
+## Acknowledgement
 
 Sincerely thanks for [SPFormer](https://github.com/sunjiahao1999/SPFormer/tree/main) repository. This repository is build upon them.

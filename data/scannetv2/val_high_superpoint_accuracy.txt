@@ -1,0 +1,938 @@
+Scene: scene0011_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0011_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0015_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0019_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0019_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0025_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0025_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0025_02
+Average scores per scan: 99.98
+==============================
+Scene: scene0030_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0496_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0500_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0500_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0046_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0064_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0084_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0131_00
+Average scores per scan: 99.93
+==============================
+Scene: scene0423_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0423_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0423_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0426_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0426_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0426_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0518_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0527_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0535_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0549_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0549_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0550_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0578_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0578_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0578_02
+Average scores per scan: 99.96
+==============================
+Scene: scene0088_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0088_02
+Average scores per scan: 99.92
+==============================
+Scene: scene0088_03
+Average scores per scan: 100.0
+==============================
+Scene: scene0063_00
+Average scores per scan: 99.92
+==============================
+Scene: scene0064_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0580_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0580_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0583_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0583_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0583_02
+Average scores per scan: 99.95
+==============================
+Scene: scene0591_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0591_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0591_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0077_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0077_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0593_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0595_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0663_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0663_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0663_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0598_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0598_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0222_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0222_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0231_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0193_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0196_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0169_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0187_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0187_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0599_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0599_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0278_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0278_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0300_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0426_03
+Average scores per scan: 100.0
+==============================
+Scene: scene0427_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0430_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0606_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0606_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0607_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0608_00
+Average scores per scan: 99.94
+==============================
+Scene: scene0608_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0608_02
+Average scores per scan: 99.96
+==============================
+Scene: scene0609_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0574_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0593_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0598_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0599_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0606_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0607_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0609_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0609_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0609_03
+Average scores per scan: 99.99
+==============================
+Scene: scene0671_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0678_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0316_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0328_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0329_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0329_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0329_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0334_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0633_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0633_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0643_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0644_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0616_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0616_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0618_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0655_01
+Average scores per scan: 99.94
+==============================
+Scene: scene0655_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0658_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0660_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0334_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0334_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0338_00
+Average scores per scan: 99.93
+==============================
+Scene: scene0338_01
+Average scores per scan: 99.96
+==============================
+Scene: scene0338_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0342_00
+Average scores per scan: 99.89
+==============================
+Scene: scene0653_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0653_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0655_00
+Average scores per scan: 99.93
+==============================
+Scene: scene0645_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0645_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0621_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0629_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0629_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0629_02
+Average scores per scan: 99.98
+==============================
+Scene: scene0164_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0164_03
+Average scores per scan: 99.97
+==============================
+Scene: scene0169_00
+Average scores per scan: 99.93
+==============================
+Scene: scene0685_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0685_02
+Average scores per scan: 99.96
+==============================
+Scene: scene0686_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0686_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0686_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0689_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0086_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0086_02
+Average scores per scan: 99.95
+==============================
+Scene: scene0088_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0647_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0647_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0648_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0651_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0651_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0651_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0652_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0575_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0575_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0575_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0645_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0648_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0671_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0678_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0695_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0697_03
+Average scores per scan: 99.97
+==============================
+Scene: scene0702_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0552_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0552_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0553_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0357_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0377_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0377_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0377_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0378_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0149_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0153_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0153_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0164_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0164_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0353_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0353_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0354_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0430_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0432_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0432_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0553_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0553_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0558_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0084_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0084_02
+Average scores per scan: 99.91
+==============================
+Scene: scene0086_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0406_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0406_02
+Average scores per scan: 99.81
+==============================
+Scene: scene0412_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0412_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0414_00
+Average scores per scan: 99.94
+==============================
+Scene: scene0690_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0690_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0693_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0693_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0693_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0435_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0435_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0435_02
+Average scores per scan: 99.94
+==============================
+Scene: scene0356_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0356_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0357_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0488_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0355_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0355_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0356_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0558_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0558_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0559_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0095_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0095_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0100_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0100_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0100_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0699_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0700_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0081_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0081_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0081_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0664_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0664_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0664_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0665_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0665_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0670_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0670_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0343_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0351_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0351_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0353_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0030_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0030_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0678_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0684_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0684_01
+Average scores per scan: 99.93
+==============================
+Scene: scene0685_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0231_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0231_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0246_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0249_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0251_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0256_00
+Average scores per scan: 99.95
+==============================
+Scene: scene0256_01
+Average scores per scan: 99.94
+==============================
+Scene: scene0256_02
+Average scores per scan: 99.98
+==============================
+Scene: scene0257_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0435_03
+Average scores per scan: 100.0
+==============================
+Scene: scene0441_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0458_00
+Average scores per scan: 99.94
+==============================
+Scene: scene0203_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0203_02
+Average scores per scan: 99.98
+==============================
+Scene: scene0568_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0568_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0568_02
+Average scores per scan: 99.95
+==============================
+Scene: scene0574_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0574_01
+Average scores per scan: 99.89
+==============================
+Scene: scene0697_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0697_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0697_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0695_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0695_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0207_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0207_02
+Average scores per scan: 99.98
+==============================
+Scene: scene0474_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0474_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0474_03
+Average scores per scan: 100.0
+==============================
+Scene: scene0458_01
+Average scores per scan: 99.97
+==============================
+Scene: scene0461_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0462_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0474_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0695_03
+Average scores per scan: 99.98
+==============================
+Scene: scene0696_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0696_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0696_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0700_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0700_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0701_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0701_01
+Average scores per scan: 99.92
+==============================
+Scene: scene0701_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0702_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0702_01
+Average scores per scan: 99.93
+==============================
+Scene: scene0277_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0277_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0277_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0474_04
+Average scores per scan: 99.98
+==============================
+Scene: scene0474_05
+Average scores per scan: 100.0
+==============================
+Scene: scene0300_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0304_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0307_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0307_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0307_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0314_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0146_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0146_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0146_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0559_01
+Average scores per scan: 100.0
+==============================
+Scene: scene0559_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0565_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0131_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0131_02
+Average scores per scan: 100.0
+==============================
+Scene: scene0139_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0144_00
+Average scores per scan: 99.96
+==============================
+Scene: scene0144_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0208_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0217_00
+Average scores per scan: 99.92
+==============================
+Scene: scene0221_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0221_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0193_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0203_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0207_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0378_01
+Average scores per scan: 99.95
+==============================
+Scene: scene0378_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0382_00
+Average scores per scan: 99.97
+==============================
+Scene: scene0382_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0389_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0406_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0046_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0046_02
+Average scores per scan: 99.97
+==============================
+Scene: scene0050_00
+Average scores per scan: 99.98
+==============================
+Scene: scene0050_01
+Average scores per scan: 99.99
+==============================
+Scene: scene0050_02
+Average scores per scan: 99.99
+==============================
+Scene: scene0488_01
+Average scores per scan: 99.98
+==============================
+Scene: scene0490_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0494_00
+Average scores per scan: 100.0
+==============================
+Scene: scene0704_00
+Average scores per scan: 99.99
+==============================
+Scene: scene0704_01
+Average scores per scan: 99.97
+==============================
+Total scans: 312
+Average superpoint accuracy: 99.98

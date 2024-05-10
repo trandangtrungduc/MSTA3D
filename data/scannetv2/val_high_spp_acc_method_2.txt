@@ -1,0 +1,965 @@
+Scene: ene0011_00_i
+Average scores per scan: 91.71
+==============================
+Scene: ene0011_01_i
+Average scores per scan: 92.83
+==============================
+Scene: ene0015_00_i
+Average scores per scan: 94.34
+==============================
+Scene: ene0019_00_i
+Average scores per scan: 96.1
+==============================
+Scene: ene0019_01_i
+Average scores per scan: 93.53
+==============================
+Scene: ene0025_00_i
+Average scores per scan: 93.52
+==============================
+Scene: ene0025_01_i
+Average scores per scan: 92.59
+==============================
+Scene: ene0025_02_i
+Average scores per scan: 93.92
+==============================
+Scene: ene0030_00_i
+Average scores per scan: 91.96
+==============================
+Scene: ene0011_00_i
+Average scores per scan: 92.14
+==============================
+Scene: ene0011_01_i
+Average scores per scan: 92.43
+==============================
+Scene: ene0015_00_i
+Average scores per scan: 94.7
+==============================
+Scene: ene0019_00_i
+Average scores per scan: 95.8
+==============================
+Scene: ene0019_01_i
+Average scores per scan: 94.07
+==============================
+Scene: ene0025_00_i
+Average scores per scan: 93.44
+==============================
+Scene: ene0025_01_i
+Average scores per scan: 93.5
+==============================
+Scene: ene0025_02_i
+Average scores per scan: 94.64
+==============================
+Scene: ene0030_00_i
+Average scores per scan: 92.25
+==============================
+Scene: ene0030_01_i
+Average scores per scan: 92.22
+==============================
+Scene: ene0030_02_i
+Average scores per scan: 92.57
+==============================
+Scene: ene0046_00_i
+Average scores per scan: 89.33
+==============================
+Scene: ene0046_01_i
+Average scores per scan: 90.01
+==============================
+Scene: ene0046_02_i
+Average scores per scan: 91.35
+==============================
+Scene: ene0050_00_i
+Average scores per scan: 93.76
+==============================
+Scene: ene0050_01_i
+Average scores per scan: 93.9
+==============================
+Scene: ene0050_02_i
+Average scores per scan: 93.41
+==============================
+Scene: ene0063_00_i
+Average scores per scan: 96.2
+==============================
+Scene: ene0064_00_i
+Average scores per scan: 93.49
+==============================
+Scene: ene0064_01_i
+Average scores per scan: 93.21
+==============================
+Scene: ene0077_00_i
+Average scores per scan: 95.12
+==============================
+Scene: ene0077_01_i
+Average scores per scan: 94.91
+==============================
+Scene: ene0081_00_i
+Average scores per scan: 94.4
+==============================
+Scene: ene0081_01_i
+Average scores per scan: 96.9
+==============================
+Scene: ene0081_02_i
+Average scores per scan: 97.28
+==============================
+Scene: ene0084_00_i
+Average scores per scan: 89.12
+==============================
+Scene: ene0084_01_i
+Average scores per scan: 88.07
+==============================
+Scene: ene0084_02_i
+Average scores per scan: 86.1
+==============================
+Scene: ene0086_00_i
+Average scores per scan: 93.4
+==============================
+Scene: ene0086_01_i
+Average scores per scan: 92.48
+==============================
+Scene: ene0086_02_i
+Average scores per scan: 92.74
+==============================
+Scene: ene0088_00_i
+Average scores per scan: 95.55
+==============================
+Scene: ene0088_01_i
+Average scores per scan: 95.88
+==============================
+Scene: ene0088_02_i
+Average scores per scan: 95.65
+==============================
+Scene: ene0088_03_i
+Average scores per scan: 96.57
+==============================
+Scene: ene0095_00_i
+Average scores per scan: 91.54
+==============================
+Scene: ene0095_01_i
+Average scores per scan: 95.03
+==============================
+Scene: ene0100_00_i
+Average scores per scan: 88.36
+==============================
+Scene: ene0100_01_i
+Average scores per scan: 87.65
+==============================
+Scene: ene0100_02_i
+Average scores per scan: 87.0
+==============================
+Scene: ene0131_00_i
+Average scores per scan: 91.51
+==============================
+Scene: ene0131_01_i
+Average scores per scan: 91.08
+==============================
+Scene: ene0131_02_i
+Average scores per scan: 92.03
+==============================
+Scene: ene0139_00_i
+Average scores per scan: 93.4
+==============================
+Scene: ene0144_00_i
+Average scores per scan: 94.33
+==============================
+Scene: ene0144_01_i
+Average scores per scan: 94.15
+==============================
+Scene: ene0146_00_i
+Average scores per scan: 89.21
+==============================
+Scene: ene0146_01_i
+Average scores per scan: 89.67
+==============================
+Scene: ene0146_02_i
+Average scores per scan: 89.74
+==============================
+Scene: ene0149_00_i
+Average scores per scan: 91.53
+==============================
+Scene: ene0153_00_i
+Average scores per scan: 87.69
+==============================
+Scene: ene0153_01_i
+Average scores per scan: 89.64
+==============================
+Scene: ene0164_00_i
+Average scores per scan: 90.87
+==============================
+Scene: ene0164_01_i
+Average scores per scan: 92.55
+==============================
+Scene: ene0164_02_i
+Average scores per scan: 91.61
+==============================
+Scene: ene0164_03_i
+Average scores per scan: 90.0
+==============================
+Scene: ene0169_00_i
+Average scores per scan: 93.83
+==============================
+Scene: ene0169_01_i
+Average scores per scan: 94.49
+==============================
+Scene: ene0187_00_i
+Average scores per scan: 96.68
+==============================
+Scene: ene0187_01_i
+Average scores per scan: 97.36
+==============================
+Scene: ene0193_00_i
+Average scores per scan: 93.84
+==============================
+Scene: ene0193_01_i
+Average scores per scan: 93.4
+==============================
+Scene: ene0196_00_i
+Average scores per scan: 95.52
+==============================
+Scene: ene0203_00_i
+Average scores per scan: 95.24
+==============================
+Scene: ene0203_01_i
+Average scores per scan: 94.97
+==============================
+Scene: ene0203_02_i
+Average scores per scan: 94.86
+==============================
+Scene: ene0207_00_i
+Average scores per scan: 93.75
+==============================
+Scene: ene0207_01_i
+Average scores per scan: 93.4
+==============================
+Scene: ene0207_02_i
+Average scores per scan: 93.14
+==============================
+Scene: ene0208_00_i
+Average scores per scan: 93.11
+==============================
+Scene: ene0217_00_i
+Average scores per scan: 92.41
+==============================
+Scene: ene0221_00_i
+Average scores per scan: 91.39
+==============================
+Scene: ene0221_01_i
+Average scores per scan: 92.92
+==============================
+Scene: ene0222_00_i
+Average scores per scan: 93.48
+==============================
+Scene: ene0222_01_i
+Average scores per scan: 93.09
+==============================
+Scene: ene0231_00_i
+Average scores per scan: 94.29
+==============================
+Scene: ene0231_01_i
+Average scores per scan: 93.94
+==============================
+Scene: ene0231_02_i
+Average scores per scan: 93.98
+==============================
+Scene: ene0246_00_i
+Average scores per scan: 92.01
+==============================
+Scene: ene0249_00_i
+Average scores per scan: 95.24
+==============================
+Scene: ene0251_00_i
+Average scores per scan: 92.58
+==============================
+Scene: ene0256_00_i
+Average scores per scan: 93.37
+==============================
+Scene: ene0256_01_i
+Average scores per scan: 92.53
+==============================
+Scene: ene0256_02_i
+Average scores per scan: 92.29
+==============================
+Scene: ene0257_00_i
+Average scores per scan: 95.06
+==============================
+Scene: ene0277_00_i
+Average scores per scan: 93.79
+==============================
+Scene: ene0277_01_i
+Average scores per scan: 89.98
+==============================
+Scene: ene0277_02_i
+Average scores per scan: 93.28
+==============================
+Scene: ene0278_00_i
+Average scores per scan: 93.46
+==============================
+Scene: ene0278_01_i
+Average scores per scan: 93.98
+==============================
+Scene: ene0300_00_i
+Average scores per scan: 91.87
+==============================
+Scene: ene0300_01_i
+Average scores per scan: 95.09
+==============================
+Scene: ene0304_00_i
+Average scores per scan: 93.02
+==============================
+Scene: ene0307_00_i
+Average scores per scan: 94.85
+==============================
+Scene: ene0307_01_i
+Average scores per scan: 95.53
+==============================
+Scene: ene0307_02_i
+Average scores per scan: 96.23
+==============================
+Scene: ene0314_00_i
+Average scores per scan: 96.46
+==============================
+Scene: ene0316_00_i
+Average scores per scan: 92.51
+==============================
+Scene: ene0328_00_i
+Average scores per scan: 94.23
+==============================
+Scene: ene0329_00_i
+Average scores per scan: 94.43
+==============================
+Scene: ene0329_01_i
+Average scores per scan: 95.62
+==============================
+Scene: ene0329_02_i
+Average scores per scan: 94.7
+==============================
+Scene: ene0334_00_i
+Average scores per scan: 97.31
+==============================
+Scene: ene0334_01_i
+Average scores per scan: 99.13
+==============================
+Scene: ene0334_02_i
+Average scores per scan: 99.33
+==============================
+Scene: ene0338_00_i
+Average scores per scan: 93.34
+==============================
+Scene: ene0338_01_i
+Average scores per scan: 93.12
+==============================
+Scene: ene0338_02_i
+Average scores per scan: 93.67
+==============================
+Scene: ene0342_00_i
+Average scores per scan: 94.11
+==============================
+Scene: ene0343_00_i
+Average scores per scan: 96.12
+==============================
+Scene: ene0351_00_i
+Average scores per scan: 96.2
+==============================
+Scene: ene0351_01_i
+Average scores per scan: 95.76
+==============================
+Scene: ene0353_00_i
+Average scores per scan: 93.71
+==============================
+Scene: ene0353_01_i
+Average scores per scan: 93.13
+==============================
+Scene: ene0353_02_i
+Average scores per scan: 93.54
+==============================
+Scene: ene0354_00_i
+Average scores per scan: 94.35
+==============================
+Scene: ene0355_00_i
+Average scores per scan: 94.88
+==============================
+Scene: ene0355_01_i
+Average scores per scan: 95.76
+==============================
+Scene: ene0356_00_i
+Average scores per scan: 91.6
+==============================
+Scene: ene0356_01_i
+Average scores per scan: 93.23
+==============================
+Scene: ene0356_02_i
+Average scores per scan: 93.02
+==============================
+Scene: ene0357_00_i
+Average scores per scan: 94.61
+==============================
+Scene: ene0357_01_i
+Average scores per scan: 94.85
+==============================
+Scene: ene0377_00_i
+Average scores per scan: 95.17
+==============================
+Scene: ene0377_01_i
+Average scores per scan: 94.11
+==============================
+Scene: ene0377_02_i
+Average scores per scan: 94.3
+==============================
+Scene: ene0378_00_i
+Average scores per scan: 91.62
+==============================
+Scene: ene0378_01_i
+Average scores per scan: 92.06
+==============================
+Scene: ene0378_02_i
+Average scores per scan: 92.49
+==============================
+Scene: ene0382_00_i
+Average scores per scan: 93.11
+==============================
+Scene: ene0382_01_i
+Average scores per scan: 91.35
+==============================
+Scene: ene0389_00_i
+Average scores per scan: 91.36
+==============================
+Scene: ene0406_00_i
+Average scores per scan: 90.04
+==============================
+Scene: ene0406_01_i
+Average scores per scan: 90.52
+==============================
+Scene: ene0406_02_i
+Average scores per scan: 89.7
+==============================
+Scene: ene0412_00_i
+Average scores per scan: 94.23
+==============================
+Scene: ene0412_01_i
+Average scores per scan: 94.23
+==============================
+Scene: ene0414_00_i
+Average scores per scan: 95.18
+==============================
+Scene: ene0423_00_i
+Average scores per scan: 99.18
+==============================
+Scene: ene0423_01_i
+Average scores per scan: 99.24
+==============================
+Scene: ene0423_02_i
+Average scores per scan: 97.43
+==============================
+Scene: ene0426_00_i
+Average scores per scan: 92.65
+==============================
+Scene: ene0426_01_i
+Average scores per scan: 93.31
+==============================
+Scene: ene0426_02_i
+Average scores per scan: 94.2
+==============================
+Scene: ene0426_03_i
+Average scores per scan: 94.36
+==============================
+Scene: ene0427_00_i
+Average scores per scan: 91.19
+==============================
+Scene: ene0430_00_i
+Average scores per scan: 95.11
+==============================
+Scene: ene0430_01_i
+Average scores per scan: 95.17
+==============================
+Scene: ene0432_00_i
+Average scores per scan: 95.58
+==============================
+Scene: ene0432_01_i
+Average scores per scan: 96.52
+==============================
+Scene: ene0435_00_i
+Average scores per scan: 92.0
+==============================
+Scene: ene0435_01_i
+Average scores per scan: 92.46
+==============================
+Scene: ene0435_02_i
+Average scores per scan: 92.92
+==============================
+Scene: ene0435_03_i
+Average scores per scan: 92.02
+==============================
+Scene: ene0441_00_i
+Average scores per scan: 92.33
+==============================
+Scene: ene0458_00_i
+Average scores per scan: 92.6
+==============================
+Scene: ene0458_01_i
+Average scores per scan: 93.49
+==============================
+Scene: ene0461_00_i
+Average scores per scan: 94.2
+==============================
+Scene: ene0462_00_i
+Average scores per scan: 96.7
+==============================
+Scene: ene0474_00_i
+Average scores per scan: 93.23
+==============================
+Scene: ene0474_01_i
+Average scores per scan: 91.91
+==============================
+Scene: ene0474_02_i
+Average scores per scan: 92.94
+==============================
+Scene: ene0474_03_i
+Average scores per scan: 91.11
+==============================
+Scene: ene0474_04_i
+Average scores per scan: 93.25
+==============================
+Scene: ene0474_05_i
+Average scores per scan: 93.4
+==============================
+Scene: ene0488_00_i
+Average scores per scan: 90.39
+==============================
+Scene: ene0488_01_i
+Average scores per scan: 89.87
+==============================
+Scene: ene0490_00_i
+Average scores per scan: 95.64
+==============================
+Scene: ene0494_00_i
+Average scores per scan: 92.83
+==============================
+Scene: ene0496_00_i
+Average scores per scan: 94.48
+==============================
+Scene: ene0500_00_i
+Average scores per scan: 94.1
+==============================
+Scene: ene0500_01_i
+Average scores per scan: 94.93
+==============================
+Scene: ene0518_00_i
+Average scores per scan: 94.81
+==============================
+Scene: ene0527_00_i
+Average scores per scan: 93.17
+==============================
+Scene: ene0535_00_i
+Average scores per scan: 94.78
+==============================
+Scene: ene0549_00_i
+Average scores per scan: 94.81
+==============================
+Scene: ene0549_01_i
+Average scores per scan: 93.55
+==============================
+Scene: ene0550_00_i
+Average scores per scan: 93.57
+==============================
+Scene: ene0552_00_i
+Average scores per scan: 94.63
+==============================
+Scene: ene0552_01_i
+Average scores per scan: 95.65
+==============================
+Scene: ene0553_00_i
+Average scores per scan: 90.96
+==============================
+Scene: ene0553_01_i
+Average scores per scan: 90.55
+==============================
+Scene: ene0553_02_i
+Average scores per scan: 89.23
+==============================
+Scene: ene0558_00_i
+Average scores per scan: 92.59
+==============================
+Scene: ene0558_01_i
+Average scores per scan: 92.01
+==============================
+Scene: ene0558_02_i
+Average scores per scan: 91.71
+==============================
+Scene: ene0559_00_i
+Average scores per scan: 93.24
+==============================
+Scene: ene0559_01_i
+Average scores per scan: 93.01
+==============================
+Scene: ene0559_02_i
+Average scores per scan: 93.09
+==============================
+Scene: ene0565_00_i
+Average scores per scan: 94.73
+==============================
+Scene: ene0568_00_i
+Average scores per scan: 93.87
+==============================
+Scene: ene0568_01_i
+Average scores per scan: 94.24
+==============================
+Scene: ene0568_02_i
+Average scores per scan: 94.21
+==============================
+Scene: ene0574_00_i
+Average scores per scan: 88.5
+==============================
+Scene: ene0574_01_i
+Average scores per scan: 88.69
+==============================
+Scene: ene0574_02_i
+Average scores per scan: 87.25
+==============================
+Scene: ene0575_00_i
+Average scores per scan: 93.39
+==============================
+Scene: ene0575_01_i
+Average scores per scan: 95.53
+==============================
+Scene: ene0575_02_i
+Average scores per scan: 95.14
+==============================
+Scene: ene0578_00_i
+Average scores per scan: 91.89
+==============================
+Scene: ene0578_01_i
+Average scores per scan: 92.95
+==============================
+Scene: ene0578_02_i
+Average scores per scan: 92.03
+==============================
+Scene: ene0580_00_i
+Average scores per scan: 92.87
+==============================
+Scene: ene0580_01_i
+Average scores per scan: 92.42
+==============================
+Scene: ene0583_00_i
+Average scores per scan: 90.87
+==============================
+Scene: ene0583_01_i
+Average scores per scan: 93.11
+==============================
+Scene: ene0583_02_i
+Average scores per scan: 92.65
+==============================
+Scene: ene0591_00_i
+Average scores per scan: 94.91
+==============================
+Scene: ene0591_01_i
+Average scores per scan: 93.59
+==============================
+Scene: ene0591_02_i
+Average scores per scan: 93.69
+==============================
+Scene: ene0593_00_i
+Average scores per scan: 95.2
+==============================
+Scene: ene0593_01_i
+Average scores per scan: 95.7
+==============================
+Scene: ene0595_00_i
+Average scores per scan: 94.92
+==============================
+Scene: ene0598_00_i
+Average scores per scan: 97.35
+==============================
+Scene: ene0598_01_i
+Average scores per scan: 95.6
+==============================
+Scene: ene0598_02_i
+Average scores per scan: 96.92
+==============================
+Scene: ene0599_00_i
+Average scores per scan: 91.94
+==============================
+Scene: ene0599_01_i
+Average scores per scan: 93.75
+==============================
+Scene: ene0599_02_i
+Average scores per scan: 93.15
+==============================
+Scene: ene0606_00_i
+Average scores per scan: 94.63
+==============================
+Scene: ene0606_01_i
+Average scores per scan: 94.93
+==============================
+Scene: ene0606_02_i
+Average scores per scan: 94.57
+==============================
+Scene: ene0607_00_i
+Average scores per scan: 94.79
+==============================
+Scene: ene0607_01_i
+Average scores per scan: 91.74
+==============================
+Scene: ene0608_00_i
+Average scores per scan: 93.81
+==============================
+Scene: ene0608_01_i
+Average scores per scan: 93.79
+==============================
+Scene: ene0608_02_i
+Average scores per scan: 94.12
+==============================
+Scene: ene0609_00_i
+Average scores per scan: 95.41
+==============================
+Scene: ene0609_01_i
+Average scores per scan: 97.36
+==============================
+Scene: ene0609_02_i
+Average scores per scan: 96.41
+==============================
+Scene: ene0609_03_i
+Average scores per scan: 95.8
+==============================
+Scene: ene0616_00_i
+Average scores per scan: 93.31
+==============================
+Scene: ene0616_01_i
+Average scores per scan: 91.83
+==============================
+Scene: ene0618_00_i
+Average scores per scan: 94.8
+==============================
+Scene: ene0621_00_i
+Average scores per scan: 95.04
+==============================
+Scene: ene0629_00_i
+Average scores per scan: 95.06
+==============================
+Scene: ene0629_01_i
+Average scores per scan: 95.26
+==============================
+Scene: ene0629_02_i
+Average scores per scan: 94.84
+==============================
+Scene: ene0633_00_i
+Average scores per scan: 93.91
+==============================
+Scene: ene0633_01_i
+Average scores per scan: 92.85
+==============================
+Scene: ene0643_00_i
+Average scores per scan: 94.19
+==============================
+Scene: ene0644_00_i
+Average scores per scan: 95.1
+==============================
+Scene: ene0645_00_i
+Average scores per scan: 91.1
+==============================
+Scene: ene0645_01_i
+Average scores per scan: 91.89
+==============================
+Scene: ene0645_02_i
+Average scores per scan: 92.54
+==============================
+Scene: ene0647_00_i
+Average scores per scan: 94.81
+==============================
+Scene: ene0647_01_i
+Average scores per scan: 94.55
+==============================
+Scene: ene0648_00_i
+Average scores per scan: 94.43
+==============================
+Scene: ene0648_01_i
+Average scores per scan: 94.7
+==============================
+Scene: ene0651_00_i
+Average scores per scan: 92.2
+==============================
+Scene: ene0651_01_i
+Average scores per scan: 90.59
+==============================
+Scene: ene0651_02_i
+Average scores per scan: 93.85
+==============================
+Scene: ene0652_00_i
+Average scores per scan: 93.71
+==============================
+Scene: ene0653_00_i
+Average scores per scan: 94.19
+==============================
+Scene: ene0653_01_i
+Average scores per scan: 93.74
+==============================
+Scene: ene0655_00_i
+Average scores per scan: 96.21
+==============================
+Scene: ene0655_01_i
+Average scores per scan: 96.07
+==============================
+Scene: ene0655_02_i
+Average scores per scan: 96.82
+==============================
+Scene: ene0658_00_i
+Average scores per scan: 93.7
+==============================
+Scene: ene0660_00_i
+Average scores per scan: 97.74
+==============================
+Scene: ene0663_00_i
+Average scores per scan: 93.63
+==============================
+Scene: ene0663_01_i
+Average scores per scan: 93.18
+==============================
+Scene: ene0663_02_i
+Average scores per scan: 88.47
+==============================
+Scene: ene0664_00_i
+Average scores per scan: 90.54
+==============================
+Scene: ene0664_01_i
+Average scores per scan: 89.98
+==============================
+Scene: ene0664_02_i
+Average scores per scan: 90.31
+==============================
+Scene: ene0665_00_i
+Average scores per scan: 93.87
+==============================
+Scene: ene0665_01_i
+Average scores per scan: 95.73
+==============================
+Scene: ene0670_00_i
+Average scores per scan: 92.85
+==============================
+Scene: ene0670_01_i
+Average scores per scan: 93.37
+==============================
+Scene: ene0671_00_i
+Average scores per scan: 95.24
+==============================
+Scene: ene0671_01_i
+Average scores per scan: 93.67
+==============================
+Scene: ene0678_00_i
+Average scores per scan: 94.82
+==============================
+Scene: ene0678_01_i
+Average scores per scan: 95.27
+==============================
+Scene: ene0678_02_i
+Average scores per scan: 95.1
+==============================
+Scene: ene0684_00_i
+Average scores per scan: 91.84
+==============================
+Scene: ene0684_01_i
+Average scores per scan: 91.7
+==============================
+Scene: ene0685_00_i
+Average scores per scan: 93.91
+==============================
+Scene: ene0685_01_i
+Average scores per scan: 94.38
+==============================
+Scene: ene0685_02_i
+Average scores per scan: 94.75
+==============================
+Scene: ene0686_00_i
+Average scores per scan: 91.1
+==============================
+Scene: ene0686_01_i
+Average scores per scan: 91.27
+==============================
+Scene: ene0686_02_i
+Average scores per scan: 89.5
+==============================
+Scene: ene0689_00_i
+Average scores per scan: 95.15
+==============================
+Scene: ene0690_00_i
+Average scores per scan: 94.81
+==============================
+Scene: ene0690_01_i
+Average scores per scan: 97.13
+==============================
+Scene: ene0693_00_i
+Average scores per scan: 89.84
+==============================
+Scene: ene0693_01_i
+Average scores per scan: 91.23
+==============================
+Scene: ene0693_02_i
+Average scores per scan: 88.68
+==============================
+Scene: ene0695_00_i
+Average scores per scan: 91.98
+==============================
+Scene: ene0695_01_i
+Average scores per scan: 94.04
+==============================
+Scene: ene0695_02_i
+Average scores per scan: 93.45
+==============================
+Scene: ene0695_03_i
+Average scores per scan: 93.25
+==============================
+Scene: ene0696_00_i
+Average scores per scan: 95.55
+==============================
+Scene: ene0696_01_i
+Average scores per scan: 95.34
+==============================
+Scene: ene0696_02_i
+Average scores per scan: 95.33
+==============================
+Scene: ene0697_00_i
+Average scores per scan: 94.36
+==============================
+Scene: ene0697_01_i
+Average scores per scan: 93.46
+==============================
+Scene: ene0697_02_i
+Average scores per scan: 94.58
+==============================
+Scene: ene0697_03_i
+Average scores per scan: 93.91
+==============================
+Scene: ene0699_00_i
+Average scores per scan: 92.4
+==============================
+Scene: ene0700_00_i
+Average scores per scan: 91.27
+==============================
+Scene: ene0700_01_i
+Average scores per scan: 94.03
+==============================
+Scene: ene0700_02_i
+Average scores per scan: 93.38
+==============================
+Scene: ene0701_00_i
+Average scores per scan: 95.31
+==============================
+Scene: ene0701_01_i
+Average scores per scan: 93.37
+==============================
+Scene: ene0701_02_i
+Average scores per scan: 94.74
+==============================
+Scene: ene0702_00_i
+Average scores per scan: 90.55
+==============================
+Scene: ene0702_01_i
+Average scores per scan: 88.21
+==============================
+Scene: ene0702_02_i
+Average scores per scan: 89.03
+==============================
+Scene: ene0704_00_i
+Average scores per scan: 95.2
+==============================
+Scene: ene0704_01_i
+Average scores per scan: 94.36
+==============================
+Total scans: 312
+Average superpoint accuracy: 93.44

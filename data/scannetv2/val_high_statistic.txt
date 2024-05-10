@@ -1,0 +1,1877 @@
+Scene: scene0011_00
+Number of points: 237360
+Number of superpoints: 1619
+Number of instances: 27.0
+Number of semantic labels: 12
+==============================
+Scene: scene0011_01
+Number of points: 239261
+Number of superpoints: 1643
+Number of instances: 24.0
+Number of semantic labels: 12
+==============================
+Scene: scene0015_00
+Number of points: 217086
+Number of superpoints: 1430
+Number of instances: 39.0
+Number of semantic labels: 6
+==============================
+Scene: scene0019_00
+Number of points: 136769
+Number of superpoints: 867
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0019_01
+Number of points: 165356
+Number of superpoints: 1084
+Number of instances: 17.0
+Number of semantic labels: 7
+==============================
+Scene: scene0025_00
+Number of points: 173392
+Number of superpoints: 1076
+Number of instances: 37.0
+Number of semantic labels: 10
+==============================
+Scene: scene0025_01
+Number of points: 165720
+Number of superpoints: 1034
+Number of instances: 33.0
+Number of semantic labels: 10
+==============================
+Scene: scene0025_02
+Number of points: 177900
+Number of superpoints: 1113
+Number of instances: 34.0
+Number of semantic labels: 9
+==============================
+Scene: scene0030_00
+Number of points: 293811
+Number of superpoints: 1945
+Number of instances: 81.0
+Number of semantic labels: 9
+==============================
+Scene: scene0496_00
+Number of points: 192962
+Number of superpoints: 1164
+Number of instances: 26.0
+Number of semantic labels: 8
+==============================
+Scene: scene0500_00
+Number of points: 396942
+Number of superpoints: 3042
+Number of instances: 49.0
+Number of semantic labels: 7
+==============================
+Scene: scene0500_01
+Number of points: 352674
+Number of superpoints: 2605
+Number of instances: 45.0
+Number of semantic labels: 8
+==============================
+Scene: scene0046_00
+Number of points: 186857
+Number of superpoints: 1084
+Number of instances: 44.0
+Number of semantic labels: 15
+==============================
+Scene: scene0064_01
+Number of points: 195252
+Number of superpoints: 1482
+Number of instances: 63.0
+Number of semantic labels: 7
+==============================
+Scene: scene0084_00
+Number of points: 116845
+Number of superpoints: 518
+Number of instances: 36.0
+Number of semantic labels: 10
+==============================
+Scene: scene0131_00
+Number of points: 177091
+Number of superpoints: 1029
+Number of instances: 36.0
+Number of semantic labels: 7
+==============================
+Scene: scene0423_00
+Number of points: 53074
+Number of superpoints: 217
+Number of instances: 4.0
+Number of semantic labels: 4
+==============================
+Scene: scene0423_01
+Number of points: 41518
+Number of superpoints: 196
+Number of instances: 4.0
+Number of semantic labels: 4
+==============================
+Scene: scene0423_02
+Number of points: 60071
+Number of superpoints: 276
+Number of instances: 4.0
+Number of semantic labels: 4
+==============================
+Scene: scene0426_00
+Number of points: 135867
+Number of superpoints: 980
+Number of instances: 36.0
+Number of semantic labels: 10
+==============================
+Scene: scene0426_01
+Number of points: 137586
+Number of superpoints: 952
+Number of instances: 32.0
+Number of semantic labels: 9
+==============================
+Scene: scene0426_02
+Number of points: 125149
+Number of superpoints: 842
+Number of instances: 36.0
+Number of semantic labels: 10
+==============================
+Scene: scene0518_00
+Number of points: 130180
+Number of superpoints: 1035
+Number of instances: 17.0
+Number of semantic labels: 10
+==============================
+Scene: scene0527_00
+Number of points: 65893
+Number of superpoints: 501
+Number of instances: 23.0
+Number of semantic labels: 9
+==============================
+Scene: scene0535_00
+Number of points: 90268
+Number of superpoints: 652
+Number of instances: 19.0
+Number of semantic labels: 9
+==============================
+Scene: scene0549_00
+Number of points: 161973
+Number of superpoints: 985
+Number of instances: 20.0
+Number of semantic labels: 8
+==============================
+Scene: scene0549_01
+Number of points: 200947
+Number of superpoints: 1366
+Number of instances: 20.0
+Number of semantic labels: 7
+==============================
+Scene: scene0550_00
+Number of points: 127677
+Number of superpoints: 891
+Number of instances: 20.0
+Number of semantic labels: 10
+==============================
+Scene: scene0578_00
+Number of points: 147607
+Number of superpoints: 979
+Number of instances: 15.0
+Number of semantic labels: 8
+==============================
+Scene: scene0578_01
+Number of points: 114840
+Number of superpoints: 694
+Number of instances: 16.0
+Number of semantic labels: 8
+==============================
+Scene: scene0578_02
+Number of points: 128553
+Number of superpoints: 745
+Number of instances: 14.0
+Number of semantic labels: 9
+==============================
+Scene: scene0088_01
+Number of points: 145650
+Number of superpoints: 1106
+Number of instances: 24.0
+Number of semantic labels: 8
+==============================
+Scene: scene0088_02
+Number of points: 170685
+Number of superpoints: 1093
+Number of instances: 33.0
+Number of semantic labels: 9
+==============================
+Scene: scene0088_03
+Number of points: 136812
+Number of superpoints: 918
+Number of instances: 25.0
+Number of semantic labels: 7
+==============================
+Scene: scene0063_00
+Number of points: 76966
+Number of superpoints: 391
+Number of instances: 15.0
+Number of semantic labels: 9
+==============================
+Scene: scene0064_00
+Number of points: 230672
+Number of superpoints: 1739
+Number of instances: 53.0
+Number of semantic labels: 8
+==============================
+Scene: scene0580_00
+Number of points: 158047
+Number of superpoints: 1113
+Number of instances: 21.0
+Number of semantic labels: 11
+==============================
+Scene: scene0580_01
+Number of points: 165009
+Number of superpoints: 1170
+Number of instances: 22.0
+Number of semantic labels: 12
+==============================
+Scene: scene0583_00
+Number of points: 146782
+Number of superpoints: 1032
+Number of instances: 23.0
+Number of semantic labels: 12
+==============================
+Scene: scene0583_01
+Number of points: 98239
+Number of superpoints: 691
+Number of instances: 18.0
+Number of semantic labels: 12
+==============================
+Scene: scene0583_02
+Number of points: 89810
+Number of superpoints: 645
+Number of instances: 17.0
+Number of semantic labels: 11
+==============================
+Scene: scene0591_00
+Number of points: 175600
+Number of superpoints: 1104
+Number of instances: 28.0
+Number of semantic labels: 11
+==============================
+Scene: scene0591_01
+Number of points: 190792
+Number of superpoints: 1164
+Number of instances: 31.0
+Number of semantic labels: 10
+==============================
+Scene: scene0591_02
+Number of points: 187656
+Number of superpoints: 1128
+Number of instances: 34.0
+Number of semantic labels: 11
+==============================
+Scene: scene0077_00
+Number of points: 92807
+Number of superpoints: 681
+Number of instances: 16.0
+Number of semantic labels: 9
+==============================
+Scene: scene0077_01
+Number of points: 90381
+Number of superpoints: 625
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0593_01
+Number of points: 179252
+Number of superpoints: 1344
+Number of instances: 20.0
+Number of semantic labels: 9
+==============================
+Scene: scene0595_00
+Number of points: 142330
+Number of superpoints: 951
+Number of instances: 8.0
+Number of semantic labels: 6
+==============================
+Scene: scene0663_00
+Number of points: 184428
+Number of superpoints: 1307
+Number of instances: 32.0
+Number of semantic labels: 10
+==============================
+Scene: scene0663_01
+Number of points: 258402
+Number of superpoints: 1703
+Number of instances: 28.0
+Number of semantic labels: 9
+==============================
+Scene: scene0663_02
+Number of points: 48076
+Number of superpoints: 425
+Number of instances: 29.0
+Number of semantic labels: 10
+==============================
+Scene: scene0598_01
+Number of points: 91924
+Number of superpoints: 780
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0598_02
+Number of points: 176139
+Number of superpoints: 1481
+Number of instances: 21.0
+Number of semantic labels: 4
+==============================
+Scene: scene0222_00
+Number of points: 234831
+Number of superpoints: 1983
+Number of instances: 33.0
+Number of semantic labels: 10
+==============================
+Scene: scene0222_01
+Number of points: 235777
+Number of superpoints: 2095
+Number of instances: 31.0
+Number of semantic labels: 10
+==============================
+Scene: scene0231_00
+Number of points: 419537
+Number of superpoints: 2783
+Number of instances: 73.0
+Number of semantic labels: 15
+==============================
+Scene: scene0193_01
+Number of points: 93668
+Number of superpoints: 450
+Number of instances: 6.0
+Number of semantic labels: 9
+==============================
+Scene: scene0196_00
+Number of points: 146032
+Number of superpoints: 1003
+Number of instances: 30.0
+Number of semantic labels: 7
+==============================
+Scene: scene0169_01
+Number of points: 228074
+Number of superpoints: 1496
+Number of instances: 31.0
+Number of semantic labels: 10
+==============================
+Scene: scene0187_00
+Number of points: 173752
+Number of superpoints: 918
+Number of instances: 12.0
+Number of semantic labels: 6
+==============================
+Scene: scene0187_01
+Number of points: 144163
+Number of superpoints: 768
+Number of instances: 12.0
+Number of semantic labels: 6
+==============================
+Scene: scene0599_01
+Number of points: 149922
+Number of superpoints: 972
+Number of instances: 19.0
+Number of semantic labels: 8
+==============================
+Scene: scene0599_02
+Number of points: 122711
+Number of superpoints: 776
+Number of instances: 16.0
+Number of semantic labels: 8
+==============================
+Scene: scene0278_00
+Number of points: 77020
+Number of superpoints: 367
+Number of instances: 13.0
+Number of semantic labels: 7
+==============================
+Scene: scene0278_01
+Number of points: 83269
+Number of superpoints: 468
+Number of instances: 12.0
+Number of semantic labels: 6
+==============================
+Scene: scene0300_00
+Number of points: 140216
+Number of superpoints: 882
+Number of instances: 15.0
+Number of semantic labels: 9
+==============================
+Scene: scene0426_03
+Number of points: 126181
+Number of superpoints: 817
+Number of instances: 24.0
+Number of semantic labels: 10
+==============================
+Scene: scene0427_00
+Number of points: 74074
+Number of superpoints: 402
+Number of instances: 8.0
+Number of semantic labels: 8
+==============================
+Scene: scene0430_00
+Number of points: 210249
+Number of superpoints: 1424
+Number of instances: 25.0
+Number of semantic labels: 7
+==============================
+Scene: scene0606_01
+Number of points: 152050
+Number of superpoints: 1220
+Number of instances: 29.0
+Number of semantic labels: 11
+==============================
+Scene: scene0606_02
+Number of points: 167932
+Number of superpoints: 1346
+Number of instances: 39.0
+Number of semantic labels: 10
+==============================
+Scene: scene0607_01
+Number of points: 78387
+Number of superpoints: 429
+Number of instances: 18.0
+Number of semantic labels: 9
+==============================
+Scene: scene0608_00
+Number of points: 186579
+Number of superpoints: 1449
+Number of instances: 38.0
+Number of semantic labels: 11
+==============================
+Scene: scene0608_01
+Number of points: 191107
+Number of superpoints: 1506
+Number of instances: 34.0
+Number of semantic labels: 11
+==============================
+Scene: scene0608_02
+Number of points: 235030
+Number of superpoints: 1936
+Number of instances: 41.0
+Number of semantic labels: 12
+==============================
+Scene: scene0609_00
+Number of points: 78836
+Number of superpoints: 503
+Number of instances: 10.0
+Number of semantic labels: 6
+==============================
+Scene: scene0574_02
+Number of points: 62475
+Number of superpoints: 398
+Number of instances: 22.0
+Number of semantic labels: 8
+==============================
+Scene: scene0593_00
+Number of points: 211902
+Number of superpoints: 1498
+Number of instances: 20.0
+Number of semantic labels: 9
+==============================
+Scene: scene0598_00
+Number of points: 145562
+Number of superpoints: 1106
+Number of instances: 18.0
+Number of semantic labels: 7
+==============================
+Scene: scene0599_00
+Number of points: 141933
+Number of superpoints: 901
+Number of instances: 19.0
+Number of semantic labels: 8
+==============================
+Scene: scene0606_00
+Number of points: 164401
+Number of superpoints: 1307
+Number of instances: 33.0
+Number of semantic labels: 11
+==============================
+Scene: scene0607_00
+Number of points: 113156
+Number of superpoints: 604
+Number of instances: 20.0
+Number of semantic labels: 9
+==============================
+Scene: scene0609_01
+Number of points: 115550
+Number of superpoints: 751
+Number of instances: 11.0
+Number of semantic labels: 5
+==============================
+Scene: scene0609_02
+Number of points: 134987
+Number of superpoints: 846
+Number of instances: 17.0
+Number of semantic labels: 5
+==============================
+Scene: scene0609_03
+Number of points: 69895
+Number of superpoints: 408
+Number of instances: 9.0
+Number of semantic labels: 6
+==============================
+Scene: scene0671_01
+Number of points: 51187
+Number of superpoints: 352
+Number of instances: 16.0
+Number of semantic labels: 7
+==============================
+Scene: scene0678_00
+Number of points: 364811
+Number of superpoints: 2158
+Number of instances: 27.0
+Number of semantic labels: 7
+==============================
+Scene: scene0316_00
+Number of points: 78769
+Number of superpoints: 418
+Number of instances: 9.0
+Number of semantic labels: 7
+==============================
+Scene: scene0328_00
+Number of points: 111467
+Number of superpoints: 799
+Number of instances: 25.0
+Number of semantic labels: 9
+==============================
+Scene: scene0329_00
+Number of points: 355413
+Number of superpoints: 2421
+Number of instances: 38.0
+Number of semantic labels: 10
+==============================
+Scene: scene0329_01
+Number of points: 368473
+Number of superpoints: 2815
+Number of instances: 41.0
+Number of semantic labels: 10
+==============================
+Scene: scene0329_02
+Number of points: 358910
+Number of superpoints: 2493
+Number of instances: 58.0
+Number of semantic labels: 12
+==============================
+Scene: scene0334_00
+Number of points: 197174
+Number of superpoints: 1226
+Number of instances: 6.0
+Number of semantic labels: 6
+==============================
+Scene: scene0633_00
+Number of points: 101007
+Number of superpoints: 814
+Number of instances: 24.0
+Number of semantic labels: 9
+==============================
+Scene: scene0633_01
+Number of points: 99171
+Number of superpoints: 798
+Number of instances: 22.0
+Number of semantic labels: 9
+==============================
+Scene: scene0643_00
+Number of points: 167360
+Number of superpoints: 1241
+Number of instances: 33.0
+Number of semantic labels: 11
+==============================
+Scene: scene0644_00
+Number of points: 299472
+Number of superpoints: 2441
+Number of instances: 56.0
+Number of semantic labels: 9
+==============================
+Scene: scene0616_00
+Number of points: 310248
+Number of superpoints: 2119
+Number of instances: 24.0
+Number of semantic labels: 9
+==============================
+Scene: scene0616_01
+Number of points: 297626
+Number of superpoints: 1853
+Number of instances: 22.0
+Number of semantic labels: 9
+==============================
+Scene: scene0618_00
+Number of points: 232740
+Number of superpoints: 1481
+Number of instances: 22.0
+Number of semantic labels: 7
+==============================
+Scene: scene0655_01
+Number of points: 159475
+Number of superpoints: 1037
+Number of instances: 21.0
+Number of semantic labels: 5
+==============================
+Scene: scene0655_02
+Number of points: 133857
+Number of superpoints: 786
+Number of instances: 19.0
+Number of semantic labels: 5
+==============================
+Scene: scene0658_00
+Number of points: 129951
+Number of superpoints: 854
+Number of instances: 12.0
+Number of semantic labels: 10
+==============================
+Scene: scene0660_00
+Number of points: 110960
+Number of superpoints: 721
+Number of instances: 7.0
+Number of semantic labels: 5
+==============================
+Scene: scene0334_01
+Number of points: 226580
+Number of superpoints: 1350
+Number of instances: 6.0
+Number of semantic labels: 6
+==============================
+Scene: scene0334_02
+Number of points: 211497
+Number of superpoints: 1273
+Number of instances: 5.0
+Number of semantic labels: 6
+==============================
+Scene: scene0338_00
+Number of points: 106339
+Number of superpoints: 570
+Number of instances: 14.0
+Number of semantic labels: 7
+==============================
+Scene: scene0338_01
+Number of points: 85459
+Number of superpoints: 472
+Number of instances: 10.0
+Number of semantic labels: 7
+==============================
+Scene: scene0338_02
+Number of points: 84445
+Number of superpoints: 447
+Number of instances: 13.0
+Number of semantic labels: 7
+==============================
+Scene: scene0342_00
+Number of points: 89958
+Number of superpoints: 617
+Number of instances: 22.0
+Number of semantic labels: 5
+==============================
+Scene: scene0653_00
+Number of points: 284951
+Number of superpoints: 1943
+Number of instances: 47.0
+Number of semantic labels: 9
+==============================
+Scene: scene0653_01
+Number of points: 331565
+Number of superpoints: 2208
+Number of instances: 53.0
+Number of semantic labels: 9
+==============================
+Scene: scene0655_00
+Number of points: 139138
+Number of superpoints: 816
+Number of instances: 17.0
+Number of semantic labels: 5
+==============================
+Scene: scene0645_00
+Number of points: 352477
+Number of superpoints: 2175
+Number of instances: 67.0
+Number of semantic labels: 18
+==============================
+Scene: scene0645_01
+Number of points: 330321
+Number of superpoints: 2002
+Number of instances: 61.0
+Number of semantic labels: 18
+==============================
+Scene: scene0621_00
+Number of points: 250821
+Number of superpoints: 1617
+Number of instances: 34.0
+Number of semantic labels: 6
+==============================
+Scene: scene0629_00
+Number of points: 255083
+Number of superpoints: 1796
+Number of instances: 26.0
+Number of semantic labels: 9
+==============================
+Scene: scene0629_01
+Number of points: 244962
+Number of superpoints: 1659
+Number of instances: 29.0
+Number of semantic labels: 10
+==============================
+Scene: scene0629_02
+Number of points: 225983
+Number of superpoints: 1625
+Number of instances: 26.0
+Number of semantic labels: 10
+==============================
+Scene: scene0164_02
+Number of points: 92825
+Number of superpoints: 675
+Number of instances: 33.0
+Number of semantic labels: 9
+==============================
+Scene: scene0164_03
+Number of points: 89190
+Number of superpoints: 681
+Number of instances: 33.0
+Number of semantic labels: 8
+==============================
+Scene: scene0169_00
+Number of points: 239354
+Number of superpoints: 1553
+Number of instances: 34.0
+Number of semantic labels: 10
+==============================
+Scene: scene0685_01
+Number of points: 138130
+Number of superpoints: 834
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0685_02
+Number of points: 222253
+Number of superpoints: 1219
+Number of instances: 12.0
+Number of semantic labels: 7
+==============================
+Scene: scene0686_00
+Number of points: 89776
+Number of superpoints: 365
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0686_01
+Number of points: 91616
+Number of superpoints: 389
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0686_02
+Number of points: 84543
+Number of superpoints: 362
+Number of instances: 12.0
+Number of semantic labels: 7
+==============================
+Scene: scene0689_00
+Number of points: 122129
+Number of superpoints: 691
+Number of instances: 13.0
+Number of semantic labels: 8
+==============================
+Scene: scene0086_01
+Number of points: 124210
+Number of superpoints: 581
+Number of instances: 25.0
+Number of semantic labels: 8
+==============================
+Scene: scene0086_02
+Number of points: 124091
+Number of superpoints: 565
+Number of instances: 27.0
+Number of semantic labels: 8
+==============================
+Scene: scene0088_00
+Number of points: 166872
+Number of superpoints: 1002
+Number of instances: 30.0
+Number of semantic labels: 8
+==============================
+Scene: scene0647_00
+Number of points: 196185
+Number of superpoints: 1188
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0647_01
+Number of points: 194360
+Number of superpoints: 1137
+Number of instances: 16.0
+Number of semantic labels: 9
+==============================
+Scene: scene0648_01
+Number of points: 172602
+Number of superpoints: 1557
+Number of instances: 42.0
+Number of semantic labels: 10
+==============================
+Scene: scene0651_00
+Number of points: 88450
+Number of superpoints: 544
+Number of instances: 15.0
+Number of semantic labels: 10
+==============================
+Scene: scene0651_01
+Number of points: 79213
+Number of superpoints: 503
+Number of instances: 16.0
+Number of semantic labels: 10
+==============================
+Scene: scene0651_02
+Number of points: 124048
+Number of superpoints: 773
+Number of instances: 17.0
+Number of semantic labels: 11
+==============================
+Scene: scene0652_00
+Number of points: 100286
+Number of superpoints: 757
+Number of instances: 21.0
+Number of semantic labels: 10
+==============================
+Scene: scene0575_00
+Number of points: 194207
+Number of superpoints: 1230
+Number of instances: 17.0
+Number of semantic labels: 8
+==============================
+Scene: scene0575_01
+Number of points: 201935
+Number of superpoints: 1297
+Number of instances: 16.0
+Number of semantic labels: 8
+==============================
+Scene: scene0575_02
+Number of points: 202882
+Number of superpoints: 1346
+Number of instances: 16.0
+Number of semantic labels: 8
+==============================
+Scene: scene0645_02
+Number of points: 269529
+Number of superpoints: 1562
+Number of instances: 49.0
+Number of semantic labels: 14
+==============================
+Scene: scene0648_00
+Number of points: 167915
+Number of superpoints: 1477
+Number of instances: 38.0
+Number of semantic labels: 12
+==============================
+Scene: scene0671_00
+Number of points: 81469
+Number of superpoints: 546
+Number of instances: 18.0
+Number of semantic labels: 7
+==============================
+Scene: scene0678_01
+Number of points: 377683
+Number of superpoints: 2367
+Number of instances: 29.0
+Number of semantic labels: 9
+==============================
+Scene: scene0695_00
+Number of points: 133418
+Number of superpoints: 939
+Number of instances: 27.0
+Number of semantic labels: 13
+==============================
+Scene: scene0697_03
+Number of points: 165912
+Number of superpoints: 1177
+Number of instances: 25.0
+Number of semantic labels: 8
+==============================
+Scene: scene0702_02
+Number of points: 32788
+Number of superpoints: 156
+Number of instances: 11.0
+Number of semantic labels: 8
+==============================
+Scene: scene0552_00
+Number of points: 123103
+Number of superpoints: 811
+Number of instances: 28.0
+Number of semantic labels: 11
+==============================
+Scene: scene0552_01
+Number of points: 91978
+Number of superpoints: 597
+Number of instances: 24.0
+Number of semantic labels: 10
+==============================
+Scene: scene0553_00
+Number of points: 62854
+Number of superpoints: 258
+Number of instances: 12.0
+Number of semantic labels: 7
+==============================
+Scene: scene0357_01
+Number of points: 133055
+Number of superpoints: 919
+Number of instances: 21.0
+Number of semantic labels: 8
+==============================
+Scene: scene0377_00
+Number of points: 111811
+Number of superpoints: 933
+Number of instances: 16.0
+Number of semantic labels: 6
+==============================
+Scene: scene0377_01
+Number of points: 131297
+Number of superpoints: 1088
+Number of instances: 11.0
+Number of semantic labels: 6
+==============================
+Scene: scene0377_02
+Number of points: 113557
+Number of superpoints: 976
+Number of instances: 10.0
+Number of semantic labels: 6
+==============================
+Scene: scene0378_00
+Number of points: 156298
+Number of superpoints: 1065
+Number of instances: 39.0
+Number of semantic labels: 10
+==============================
+Scene: scene0149_00
+Number of points: 162396
+Number of superpoints: 1101
+Number of instances: 23.0
+Number of semantic labels: 11
+==============================
+Scene: scene0153_00
+Number of points: 47709
+Number of superpoints: 267
+Number of instances: 18.0
+Number of semantic labels: 9
+==============================
+Scene: scene0153_01
+Number of points: 49553
+Number of superpoints: 270
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0164_00
+Number of points: 94315
+Number of superpoints: 692
+Number of instances: 45.0
+Number of semantic labels: 8
+==============================
+Scene: scene0164_01
+Number of points: 88073
+Number of superpoints: 674
+Number of instances: 33.0
+Number of semantic labels: 9
+==============================
+Scene: scene0353_01
+Number of points: 203737
+Number of superpoints: 1596
+Number of instances: 43.0
+Number of semantic labels: 12
+==============================
+Scene: scene0353_02
+Number of points: 191953
+Number of superpoints: 1575
+Number of instances: 46.0
+Number of semantic labels: 12
+==============================
+Scene: scene0354_00
+Number of points: 110569
+Number of superpoints: 614
+Number of instances: 14.0
+Number of semantic labels: 8
+==============================
+Scene: scene0430_01
+Number of points: 126166
+Number of superpoints: 796
+Number of instances: 14.0
+Number of semantic labels: 6
+==============================
+Scene: scene0432_00
+Number of points: 39529
+Number of superpoints: 230
+Number of instances: 2.0
+Number of semantic labels: 5
+==============================
+Scene: scene0432_01
+Number of points: 37547
+Number of superpoints: 213
+Number of instances: 5.0
+Number of semantic labels: 5
+==============================
+Scene: scene0553_01
+Number of points: 61388
+Number of superpoints: 222
+Number of instances: 11.0
+Number of semantic labels: 7
+==============================
+Scene: scene0553_02
+Number of points: 67632
+Number of superpoints: 255
+Number of instances: 13.0
+Number of semantic labels: 7
+==============================
+Scene: scene0558_00
+Number of points: 92953
+Number of superpoints: 715
+Number of instances: 31.0
+Number of semantic labels: 8
+==============================
+Scene: scene0084_01
+Number of points: 111833
+Number of superpoints: 483
+Number of instances: 35.0
+Number of semantic labels: 10
+==============================
+Scene: scene0084_02
+Number of points: 98346
+Number of superpoints: 438
+Number of instances: 31.0
+Number of semantic labels: 10
+==============================
+Scene: scene0086_00
+Number of points: 124572
+Number of superpoints: 563
+Number of instances: 25.0
+Number of semantic labels: 8
+==============================
+Scene: scene0406_01
+Number of points: 45557
+Number of superpoints: 329
+Number of instances: 19.0
+Number of semantic labels: 11
+==============================
+Scene: scene0406_02
+Number of points: 41752
+Number of superpoints: 300
+Number of instances: 16.0
+Number of semantic labels: 11
+==============================
+Scene: scene0412_00
+Number of points: 175557
+Number of superpoints: 1289
+Number of instances: 21.0
+Number of semantic labels: 7
+==============================
+Scene: scene0412_01
+Number of points: 133337
+Number of superpoints: 980
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0414_00
+Number of points: 192685
+Number of superpoints: 1295
+Number of instances: 32.0
+Number of semantic labels: 8
+==============================
+Scene: scene0690_00
+Number of points: 106050
+Number of superpoints: 588
+Number of instances: 22.0
+Number of semantic labels: 7
+==============================
+Scene: scene0690_01
+Number of points: 109935
+Number of superpoints: 662
+Number of instances: 14.0
+Number of semantic labels: 8
+==============================
+Scene: scene0693_00
+Number of points: 41327
+Number of superpoints: 260
+Number of instances: 21.0
+Number of semantic labels: 10
+==============================
+Scene: scene0693_01
+Number of points: 47986
+Number of superpoints: 303
+Number of instances: 24.0
+Number of semantic labels: 11
+==============================
+Scene: scene0693_02
+Number of points: 47996
+Number of superpoints: 296
+Number of instances: 17.0
+Number of semantic labels: 10
+==============================
+Scene: scene0435_00
+Number of points: 254998
+Number of superpoints: 1724
+Number of instances: 45.0
+Number of semantic labels: 16
+==============================
+Scene: scene0435_01
+Number of points: 273280
+Number of superpoints: 1921
+Number of instances: 46.0
+Number of semantic labels: 15
+==============================
+Scene: scene0435_02
+Number of points: 210308
+Number of superpoints: 1490
+Number of instances: 29.0
+Number of semantic labels: 11
+==============================
+Scene: scene0356_01
+Number of points: 96610
+Number of superpoints: 557
+Number of instances: 14.0
+Number of semantic labels: 9
+==============================
+Scene: scene0356_02
+Number of points: 83613
+Number of superpoints: 464
+Number of instances: 15.0
+Number of semantic labels: 9
+==============================
+Scene: scene0357_00
+Number of points: 136945
+Number of superpoints: 1031
+Number of instances: 26.0
+Number of semantic labels: 8
+==============================
+Scene: scene0488_00
+Number of points: 108319
+Number of superpoints: 509
+Number of instances: 17.0
+Number of semantic labels: 7
+==============================
+Scene: scene0355_00
+Number of points: 136135
+Number of superpoints: 820
+Number of instances: 13.0
+Number of semantic labels: 5
+==============================
+Scene: scene0355_01
+Number of points: 67623
+Number of superpoints: 387
+Number of instances: 6.0
+Number of semantic labels: 5
+==============================
+Scene: scene0356_00
+Number of points: 81172
+Number of superpoints: 439
+Number of instances: 15.0
+Number of semantic labels: 9
+==============================
+Scene: scene0558_01
+Number of points: 141342
+Number of superpoints: 1066
+Number of instances: 39.0
+Number of semantic labels: 7
+==============================
+Scene: scene0558_02
+Number of points: 173904
+Number of superpoints: 1298
+Number of instances: 53.0
+Number of semantic labels: 7
+==============================
+Scene: scene0559_00
+Number of points: 89796
+Number of superpoints: 513
+Number of instances: 8.0
+Number of semantic labels: 6
+==============================
+Scene: scene0095_00
+Number of points: 214895
+Number of superpoints: 1232
+Number of instances: 44.0
+Number of semantic labels: 9
+==============================
+Scene: scene0095_01
+Number of points: 216254
+Number of superpoints: 1607
+Number of instances: 33.0
+Number of semantic labels: 8
+==============================
+Scene: scene0100_00
+Number of points: 52304
+Number of superpoints: 296
+Number of instances: 23.0
+Number of semantic labels: 10
+==============================
+Scene: scene0100_01
+Number of points: 51211
+Number of superpoints: 324
+Number of instances: 23.0
+Number of semantic labels: 9
+==============================
+Scene: scene0100_02
+Number of points: 50328
+Number of superpoints: 349
+Number of instances: 20.0
+Number of semantic labels: 10
+==============================
+Scene: scene0699_00
+Number of points: 153041
+Number of superpoints: 1013
+Number of instances: 32.0
+Number of semantic labels: 12
+==============================
+Scene: scene0700_00
+Number of points: 167755
+Number of superpoints: 1131
+Number of instances: 29.0
+Number of semantic labels: 10
+==============================
+Scene: scene0081_00
+Number of points: 51381
+Number of superpoints: 263
+Number of instances: 7.0
+Number of semantic labels: 6
+==============================
+Scene: scene0081_01
+Number of points: 179955
+Number of superpoints: 1077
+Number of instances: 38.0
+Number of semantic labels: 4
+==============================
+Scene: scene0081_02
+Number of points: 153929
+Number of superpoints: 894
+Number of instances: 33.0
+Number of semantic labels: 4
+==============================
+Scene: scene0664_00
+Number of points: 44585
+Number of superpoints: 277
+Number of instances: 17.0
+Number of semantic labels: 11
+==============================
+Scene: scene0664_01
+Number of points: 45436
+Number of superpoints: 292
+Number of instances: 21.0
+Number of semantic labels: 11
+==============================
+Scene: scene0664_02
+Number of points: 46804
+Number of superpoints: 289
+Number of instances: 24.0
+Number of semantic labels: 11
+==============================
+Scene: scene0665_00
+Number of points: 252726
+Number of superpoints: 1670
+Number of instances: 30.0
+Number of semantic labels: 8
+==============================
+Scene: scene0665_01
+Number of points: 200688
+Number of superpoints: 1456
+Number of instances: 24.0
+Number of semantic labels: 7
+==============================
+Scene: scene0670_00
+Number of points: 176038
+Number of superpoints: 1272
+Number of instances: 32.0
+Number of semantic labels: 10
+==============================
+Scene: scene0670_01
+Number of points: 256524
+Number of superpoints: 1880
+Number of instances: 45.0
+Number of semantic labels: 13
+==============================
+Scene: scene0343_00
+Number of points: 165618
+Number of superpoints: 1329
+Number of instances: 14.0
+Number of semantic labels: 5
+==============================
+Scene: scene0351_00
+Number of points: 172134
+Number of superpoints: 1339
+Number of instances: 21.0
+Number of semantic labels: 8
+==============================
+Scene: scene0351_01
+Number of points: 170840
+Number of superpoints: 1286
+Number of instances: 27.0
+Number of semantic labels: 9
+==============================
+Scene: scene0353_00
+Number of points: 208782
+Number of superpoints: 1666
+Number of instances: 48.0
+Number of semantic labels: 13
+==============================
+Scene: scene0030_01
+Number of points: 284801
+Number of superpoints: 1944
+Number of instances: 66.0
+Number of semantic labels: 9
+==============================
+Scene: scene0030_02
+Number of points: 284243
+Number of superpoints: 1871
+Number of instances: 91.0
+Number of semantic labels: 9
+==============================
+Scene: scene0678_02
+Number of points: 328973
+Number of superpoints: 1889
+Number of instances: 24.0
+Number of semantic labels: 9
+==============================
+Scene: scene0684_00
+Number of points: 41364
+Number of superpoints: 230
+Number of instances: 15.0
+Number of semantic labels: 7
+==============================
+Scene: scene0684_01
+Number of points: 39474
+Number of superpoints: 230
+Number of instances: 14.0
+Number of semantic labels: 7
+==============================
+Scene: scene0685_00
+Number of points: 132720
+Number of superpoints: 812
+Number of instances: 14.0
+Number of semantic labels: 7
+==============================
+Scene: scene0231_01
+Number of points: 438565
+Number of superpoints: 2999
+Number of instances: 66.0
+Number of semantic labels: 15
+==============================
+Scene: scene0231_02
+Number of points: 353013
+Number of superpoints: 2508
+Number of instances: 57.0
+Number of semantic labels: 15
+==============================
+Scene: scene0246_00
+Number of points: 201062
+Number of superpoints: 1550
+Number of instances: 33.0
+Number of semantic labels: 13
+==============================
+Scene: scene0249_00
+Number of points: 331031
+Number of superpoints: 2029
+Number of instances: 45.0
+Number of semantic labels: 7
+==============================
+Scene: scene0251_00
+Number of points: 226765
+Number of superpoints: 1347
+Number of instances: 16.0
+Number of semantic labels: 9
+==============================
+Scene: scene0256_00
+Number of points: 108517
+Number of superpoints: 902
+Number of instances: 10.0
+Number of semantic labels: 7
+==============================
+Scene: scene0256_01
+Number of points: 111617
+Number of superpoints: 886
+Number of instances: 16.0
+Number of semantic labels: 7
+==============================
+Scene: scene0256_02
+Number of points: 92069
+Number of superpoints: 754
+Number of instances: 19.0
+Number of semantic labels: 8
+==============================
+Scene: scene0257_00
+Number of points: 180928
+Number of superpoints: 1172
+Number of instances: 29.0
+Number of semantic labels: 7
+==============================
+Scene: scene0435_03
+Number of points: 203722
+Number of superpoints: 1372
+Number of instances: 29.0
+Number of semantic labels: 11
+==============================
+Scene: scene0441_00
+Number of points: 86191
+Number of superpoints: 333
+Number of instances: 14.0
+Number of semantic labels: 7
+==============================
+Scene: scene0458_00
+Number of points: 65264
+Number of superpoints: 558
+Number of instances: 27.0
+Number of semantic labels: 9
+==============================
+Scene: scene0203_01
+Number of points: 206210
+Number of superpoints: 1592
+Number of instances: 44.0
+Number of semantic labels: 11
+==============================
+Scene: scene0203_02
+Number of points: 238392
+Number of superpoints: 1749
+Number of instances: 43.0
+Number of semantic labels: 12
+==============================
+Scene: scene0568_00
+Number of points: 232453
+Number of superpoints: 1526
+Number of instances: 21.0
+Number of semantic labels: 10
+==============================
+Scene: scene0568_01
+Number of points: 239388
+Number of superpoints: 1550
+Number of instances: 24.0
+Number of semantic labels: 10
+==============================
+Scene: scene0568_02
+Number of points: 232577
+Number of superpoints: 1490
+Number of instances: 22.0
+Number of semantic labels: 10
+==============================
+Scene: scene0574_00
+Number of points: 55521
+Number of superpoints: 305
+Number of instances: 21.0
+Number of semantic labels: 7
+==============================
+Scene: scene0574_01
+Number of points: 53641
+Number of superpoints: 291
+Number of instances: 20.0
+Number of semantic labels: 7
+==============================
+Scene: scene0697_00
+Number of points: 139300
+Number of superpoints: 1007
+Number of instances: 26.0
+Number of semantic labels: 8
+==============================
+Scene: scene0697_01
+Number of points: 146820
+Number of superpoints: 1041
+Number of instances: 23.0
+Number of semantic labels: 7
+==============================
+Scene: scene0697_02
+Number of points: 166855
+Number of superpoints: 1123
+Number of instances: 18.0
+Number of semantic labels: 6
+==============================
+Scene: scene0695_01
+Number of points: 143776
+Number of superpoints: 1200
+Number of instances: 29.0
+Number of semantic labels: 9
+==============================
+Scene: scene0695_02
+Number of points: 157025
+Number of superpoints: 1253
+Number of instances: 32.0
+Number of semantic labels: 9
+==============================
+Scene: scene0207_01
+Number of points: 269274
+Number of superpoints: 2110
+Number of instances: 48.0
+Number of semantic labels: 17
+==============================
+Scene: scene0207_02
+Number of points: 347322
+Number of superpoints: 2355
+Number of instances: 64.0
+Number of semantic labels: 18
+==============================
+Scene: scene0474_01
+Number of points: 213949
+Number of superpoints: 1207
+Number of instances: 41.0
+Number of semantic labels: 10
+==============================
+Scene: scene0474_02
+Number of points: 252355
+Number of superpoints: 1375
+Number of instances: 33.0
+Number of semantic labels: 10
+==============================
+Scene: scene0474_03
+Number of points: 195084
+Number of superpoints: 1217
+Number of instances: 29.0
+Number of semantic labels: 11
+==============================
+Scene: scene0458_01
+Number of points: 69167
+Number of superpoints: 586
+Number of instances: 29.0
+Number of semantic labels: 8
+==============================
+Scene: scene0461_00
+Number of points: 59134
+Number of superpoints: 395
+Number of instances: 5.0
+Number of semantic labels: 6
+==============================
+Scene: scene0462_00
+Number of points: 156714
+Number of superpoints: 1139
+Number of instances: 16.0
+Number of semantic labels: 7
+==============================
+Scene: scene0474_00
+Number of points: 182281
+Number of superpoints: 1224
+Number of instances: 35.0
+Number of semantic labels: 10
+==============================
+Scene: scene0695_03
+Number of points: 205565
+Number of superpoints: 1559
+Number of instances: 24.0
+Number of semantic labels: 10
+==============================
+Scene: scene0696_00
+Number of points: 231067
+Number of superpoints: 1694
+Number of instances: 27.0
+Number of semantic labels: 10
+==============================
+Scene: scene0696_01
+Number of points: 288139
+Number of superpoints: 2239
+Number of instances: 34.0
+Number of semantic labels: 11
+==============================
+Scene: scene0696_02
+Number of points: 305916
+Number of superpoints: 2400
+Number of instances: 35.0
+Number of semantic labels: 11
+==============================
+Scene: scene0700_01
+Number of points: 153877
+Number of superpoints: 1077
+Number of instances: 21.0
+Number of semantic labels: 10
+==============================
+Scene: scene0700_02
+Number of points: 148642
+Number of superpoints: 993
+Number of instances: 30.0
+Number of semantic labels: 9
+==============================
+Scene: scene0701_00
+Number of points: 73550
+Number of superpoints: 404
+Number of instances: 3.0
+Number of semantic labels: 5
+==============================
+Scene: scene0701_01
+Number of points: 77206
+Number of superpoints: 420
+Number of instances: 3.0
+Number of semantic labels: 5
+==============================
+Scene: scene0701_02
+Number of points: 110945
+Number of superpoints: 664
+Number of instances: 4.0
+Number of semantic labels: 5
+==============================
+Scene: scene0702_00
+Number of points: 54769
+Number of superpoints: 299
+Number of instances: 14.0
+Number of semantic labels: 9
+==============================
+Scene: scene0702_01
+Number of points: 56603
+Number of superpoints: 366
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0277_00
+Number of points: 79184
+Number of superpoints: 413
+Number of instances: 10.0
+Number of semantic labels: 10
+==============================
+Scene: scene0277_01
+Number of points: 82628
+Number of superpoints: 440
+Number of instances: 11.0
+Number of semantic labels: 10
+==============================
+Scene: scene0277_02
+Number of points: 82251
+Number of superpoints: 391
+Number of instances: 10.0
+Number of semantic labels: 10
+==============================
+Scene: scene0474_04
+Number of points: 178388
+Number of superpoints: 1244
+Number of instances: 28.0
+Number of semantic labels: 12
+==============================
+Scene: scene0474_05
+Number of points: 131255
+Number of superpoints: 877
+Number of instances: 26.0
+Number of semantic labels: 11
+==============================
+Scene: scene0300_01
+Number of points: 173223
+Number of superpoints: 1203
+Number of instances: 17.0
+Number of semantic labels: 9
+==============================
+Scene: scene0304_00
+Number of points: 164016
+Number of superpoints: 998
+Number of instances: 8.0
+Number of semantic labels: 6
+==============================
+Scene: scene0307_00
+Number of points: 371616
+Number of superpoints: 2799
+Number of instances: 29.0
+Number of semantic labels: 11
+==============================
+Scene: scene0307_01
+Number of points: 412511
+Number of superpoints: 3120
+Number of instances: 30.0
+Number of semantic labels: 11
+==============================
+Scene: scene0307_02
+Number of points: 408633
+Number of superpoints: 2957
+Number of instances: 32.0
+Number of semantic labels: 11
+==============================
+Scene: scene0314_00
+Number of points: 87446
+Number of superpoints: 649
+Number of instances: 11.0
+Number of semantic labels: 6
+==============================
+Scene: scene0146_00
+Number of points: 60438
+Number of superpoints: 240
+Number of instances: 11.0
+Number of semantic labels: 7
+==============================
+Scene: scene0146_01
+Number of points: 59330
+Number of superpoints: 241
+Number of instances: 11.0
+Number of semantic labels: 7
+==============================
+Scene: scene0146_02
+Number of points: 64383
+Number of superpoints: 269
+Number of instances: 12.0
+Number of semantic labels: 7
+==============================
+Scene: scene0559_01
+Number of points: 81654
+Number of superpoints: 405
+Number of instances: 10.0
+Number of semantic labels: 7
+==============================
+Scene: scene0559_02
+Number of points: 118005
+Number of superpoints: 714
+Number of instances: 7.0
+Number of semantic labels: 6
+==============================
+Scene: scene0565_00
+Number of points: 167558
+Number of superpoints: 1333
+Number of instances: 35.0
+Number of semantic labels: 9
+==============================
+Scene: scene0131_01
+Number of points: 172221
+Number of superpoints: 1062
+Number of instances: 34.0
+Number of semantic labels: 7
+==============================
+Scene: scene0131_02
+Number of points: 140599
+Number of superpoints: 816
+Number of instances: 31.0
+Number of semantic labels: 8
+==============================
+Scene: scene0139_00
+Number of points: 72007
+Number of superpoints: 441
+Number of instances: 21.0
+Number of semantic labels: 8
+==============================
+Scene: scene0144_00
+Number of points: 126879
+Number of superpoints: 992
+Number of instances: 25.0
+Number of semantic labels: 9
+==============================
+Scene: scene0144_01
+Number of points: 116341
+Number of superpoints: 964
+Number of instances: 22.0
+Number of semantic labels: 9
+==============================
+Scene: scene0208_00
+Number of points: 407386
+Number of superpoints: 3908
+Number of instances: 102.0
+Number of semantic labels: 6
+==============================
+Scene: scene0217_00
+Number of points: 126385
+Number of superpoints: 755
+Number of instances: 22.0
+Number of semantic labels: 9
+==============================
+Scene: scene0221_00
+Number of points: 185828
+Number of superpoints: 1106
+Number of instances: 40.0
+Number of semantic labels: 15
+==============================
+Scene: scene0221_01
+Number of points: 170654
+Number of superpoints: 988
+Number of instances: 32.0
+Number of semantic labels: 12
+==============================
+Scene: scene0193_00
+Number of points: 101783
+Number of superpoints: 634
+Number of instances: 7.0
+Number of semantic labels: 9
+==============================
+Scene: scene0203_00
+Number of points: 205756
+Number of superpoints: 1556
+Number of instances: 39.0
+Number of semantic labels: 12
+==============================
+Scene: scene0207_00
+Number of points: 304396
+Number of superpoints: 2176
+Number of instances: 58.0
+Number of semantic labels: 18
+==============================
+Scene: scene0378_01
+Number of points: 196608
+Number of superpoints: 1217
+Number of instances: 39.0
+Number of semantic labels: 10
+==============================
+Scene: scene0378_02
+Number of points: 161593
+Number of superpoints: 1126
+Number of instances: 32.0
+Number of semantic labels: 10
+==============================
+Scene: scene0382_00
+Number of points: 100285
+Number of superpoints: 649
+Number of instances: 11.0
+Number of semantic labels: 9
+==============================
+Scene: scene0382_01
+Number of points: 96933
+Number of superpoints: 560
+Number of instances: 13.0
+Number of semantic labels: 10
+==============================
+Scene: scene0389_00
+Number of points: 201003
+Number of superpoints: 1111
+Number of instances: 22.0
+Number of semantic labels: 12
+==============================
+Scene: scene0406_00
+Number of points: 48864
+Number of superpoints: 333
+Number of instances: 20.0
+Number of semantic labels: 11
+==============================
+Scene: scene0046_01
+Number of points: 198471
+Number of superpoints: 1184
+Number of instances: 43.0
+Number of semantic labels: 13
+==============================
+Scene: scene0046_02
+Number of points: 199774
+Number of superpoints: 1272
+Number of instances: 42.0
+Number of semantic labels: 13
+==============================
+Scene: scene0050_00
+Number of points: 211406
+Number of superpoints: 1586
+Number of instances: 29.0
+Number of semantic labels: 8
+==============================
+Scene: scene0050_01
+Number of points: 199034
+Number of superpoints: 1460
+Number of instances: 27.0
+Number of semantic labels: 8
+==============================
+Scene: scene0050_02
+Number of points: 196815
+Number of superpoints: 1474
+Number of instances: 27.0
+Number of semantic labels: 10
+==============================
+Scene: scene0488_01
+Number of points: 109452
+Number of superpoints: 461
+Number of instances: 17.0
+Number of semantic labels: 7
+==============================
+Scene: scene0490_00
+Number of points: 131283
+Number of superpoints: 733
+Number of instances: 13.0
+Number of semantic labels: 5
+==============================
+Scene: scene0494_00
+Number of points: 62048
+Number of superpoints: 344
+Number of instances: 8.0
+Number of semantic labels: 8
+==============================
+Scene: scene0704_00
+Number of points: 183029
+Number of superpoints: 1358
+Number of instances: 20.0
+Number of semantic labels: 9
+==============================
+Scene: scene0704_01
+Number of points: 149982
+Number of superpoints: 1118
+Number of instances: 19.0
+Number of semantic labels: 7
+==============================
+Total scans: 312
+Average point clouds: 158783.87
+Average superpoints: 1067.46
+Average instances: 25.43
+Average semantic labels: 8.88
