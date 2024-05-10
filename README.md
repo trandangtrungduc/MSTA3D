@@ -35,36 +35,11 @@ The following installation suppose `python=3.8` `pytorch=1.10.0` and `cuda=11.3`
   cd MSTA3D
   ```
 
-- Create a conda environment
-
+- Environment Installation
   ```
-  conda create -n msta3d python=3.8
-  conda activate msta3d
+  ./setup_env.sh
   ```
-
-- Install the dependencies
-
-  Install [Pytorch 1.10](https://pytorch.org/get-started/previous-versions/)
-
-  ```
-  conda install pytorch==1.10.0 torchvision==0.11.0 cudatoolkit=11.3 -c pytorch -c conda-forge
-  pip install spconv-cu113
-  conda install pytorch-scatter -c pyg
-  pip install -r requirements.txt
-  ```
-
-  Install segmentator from this [repository](https://github.com/Karbo123/segmentator).
-
-- Setup msta3d and pointgroup_ops
-
-  ```
-  sudo apt-get install libsparsehash-dev
-  python setup.py develop
-  cd msta3d/lib/
-  python setup.py develop
-  cd ../..
-  ```
-- Refer to `msta3d_environment.yml` for details of the environment we used.
+- Refer to `env_information/msta3d_environment.yml` for details of the environment we used.
 
 ## Data Preprocessing
 
