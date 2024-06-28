@@ -102,7 +102,7 @@ pip install plyfile==1.0.3
 pip install scipy==1.10.1
 pip install tensorboard==2.14.0
 pip install tensorboardX==2.6.2.2
-pip install tqdm=4.66.2
+pip install tqdm==4.66.2
 pip install yapf==0.40.2
 pip install einops==0.7.0
 pip install pyviz3d==0.3.0
