@@ -1,0 +1,202 @@
+  (decoder): QueryDecoder(
+    (query): Embedding(100, 256)  # 100×256=25600
+    (input_proj): Sequential(
+      (0): Linear(in_features=32, out_features=256, bias=True) # (32×256)+256=8192+256=8448
+      (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True) # 2×256=512
+      (2): ReLU()
+    ) # 25600+8448+512=34560
+    (cross_attn_layers): ModuleList(
+      (0): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (1): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (2): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (3): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (4): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (5): CrossAttentionLayer(
+        (attn): MultiheadAttention(
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (self_attn_layers): ModuleList(
+      (0): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (1): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (2): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (3): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (4): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+      (5): SelfAttentionLayer(
+        (attn): MultiheadAttention(
+          (talking_head): Linear(in_features=8, out_features=8, bias=True)
+          (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (dropout): Dropout(p=0.0, inplace=False)
+      )
+    )
+    (ffn_layers): ModuleList(
+      (0): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): FFN(
+        (net): Sequential(
+          (0): Linear(in_features=256, out_features=1024, bias=True)
+          (1): GELU()
+          (2): Dropout(p=0.0, inplace=False)
+          (3): Linear(in_features=1024, out_features=256, bias=True)
+          (4): Dropout(p=0.0, inplace=False)
+        )
+        (norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (out_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    (x_mask): MLP(
+      (0): Linear(in_features=32, out_features=250, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=250, out_features=250, bias=True)
+    )
+    (x_box): MLP(
+      (0): Linear(in_features=32, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=6, bias=True)
+    )
+    (x_mask_box): MLP(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+    )
+    (out_box): MLP(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=6, bias=True)
+    )
+    (out_box_score): MLP(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=1, bias=True)
+    )
+    (out_cls): MLP(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=19, bias=True)
+    )
+    (out_score): MLP(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (criterion): Criterion(
+    (matcher): HungarianMatcher()
+  )
+)
