@@ -95,6 +95,8 @@ model:
     topk_insts: 100
     score_thr: 0.0
     npoint_thr: 100
+  iou_threshold: 0 # 0.9
+  dbscan_eps: 0 # 1.0
   norm_eval: False
   fix_module: []
 

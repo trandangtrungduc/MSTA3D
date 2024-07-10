@@ -1,7 +1,9 @@
 import gorilla
 import functools
 import pointgroup_ops
+import numpy as np
 import spconv.pytorch as spconv
+from sklearn.cluster import DBSCAN
 
 import torch
 import torch.nn as nn
@@ -28,6 +30,7 @@ class MSTA3D(nn.Module):
                  test_cfg=None,
                  norm_eval=False,
                  iou_threshold=0.9,
+                 dbscan_eps=1.0,
                  fix_module=[]):
 
         super().__init__()
@@ -45,6 +48,7 @@ class MSTA3D(nn.Module):
         self.test_cfg = test_cfg
         self.norm_eval = norm_eval
         self.iou_threshold = iou_threshold
+        self.dbscan_eps = dbscan_eps
 
         for module in fix_module:
             module = getattr(self, module)
@@ -110,29 +114,35 @@ class MSTA3D(nn.Module):
     def predict_by_feat(self, scan_ids, decoder_output, superpoints_h, coords_float, insts):
 
         pred_labels = decoder_output["labels"]
-        pred_masks = decoder_output["masks"]
-        pred_boxes = decoder_output["boxes"]
+        pred_masks = decoder_output["masks"][0]
         pred_scores = decoder_output["mask_scores"][0]
         pred_box_scores = decoder_output["box_scores"][0]
 
         scores = F.softmax(pred_labels[0], dim=-1)[:, :-1]
         scores *= pred_scores
         scores *= pred_box_scores
+
         labels = (torch.arange(self.num_class, device=scores.device).unsqueeze(0).repeat(self.decoder.num_query, 1).flatten(0, 1))
         scores, topk_idx = scores.flatten(0, 1).topk(self.test_cfg.topk_insts, sorted=False)
         labels = labels[topk_idx]
         labels += 1
-
         topk_idx = torch.div(topk_idx, self.num_class, rounding_mode="floor")
-        mask_pred, boxes_pred = pred_masks[0], pred_boxes[0]
-        mask_pred, boxes_pred = mask_pred[topk_idx], boxes_pred[topk_idx]
+        mask_pred = pred_masks[topk_idx]
         mask_pred_sigmoid = mask_pred.sigmoid()
         mask_pred = (mask_pred > 0).float()
         mask_scores = (mask_pred_sigmoid * mask_pred).sum(1) / (mask_pred.sum(1) + 1e-6)
         scores = scores * mask_scores
 
         mask_pred = mask_pred[:, superpoints_h].int()
-        # mask_pred = self.get_refined_mask(mask_pred, boxes_pred, coords_float, pred_box_scores)
+
+        if self.iou_threshold != 0:
+            pred_boxes = decoder_output["boxes"][0]
+            boxes_pred = pred_boxes[topk_idx]
+            mask_pred = self.get_refined_mask(mask_pred, boxes_pred, coords_float, pred_box_scores)
+
+        if self.dbscan_eps != 0:
+            mask_pred = self.dbscan_post_processing(coords_float, mask_pred)
+
         score_mask = scores > self.test_cfg.score_thr
         scores = scores[score_mask]
         labels = labels[score_mask]
@@ -159,6 +169,25 @@ class MSTA3D(nn.Module):
 
         gt_instances = insts[0].gt_instances
         return dict(scan_id=scan_ids[0], pred_instances=pred_instances, gt_instances=gt_instances)
+
+    def dbscan_post_processing(self, coords_float, mask_pred):
+        curr_coords = coords_float.cpu().numpy()
+        mask_pred_np = mask_pred.cpu().numpy()
+        for i in range(len(mask_pred_np)):
+            inst_id = np.where(mask_pred_np[i] == 1)[0]
+            inst_points = curr_coords[inst_id]
+            if inst_points.shape[0] != 0:
+                clusters = DBSCAN(eps=self.dbscan_eps, min_samples=1, n_jobs=-1).fit(inst_points).labels_
+                if -1 in np.unique(clusters):
+                    print(f"Found noisy at mask {i}")
+                new_mask = torch.zeros(mask_pred[i].shape, dtype=int)
+                new_mask[inst_id] = torch.from_numpy(clusters) + 1
+                new_mask = new_mask.cuda()
+                for cluster_id in np.unique(clusters):
+                    original_mask = mask_pred[i]
+                    if cluster_id != -1:
+                        mask_pred[i] = original_mask * (new_mask == cluster_id +1)
+        return mask_pred
 
     def extract_feat(self, x, superpoints_h, superpoints_l, p2v_map):
 
