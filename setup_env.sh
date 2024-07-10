@@ -92,6 +92,7 @@ echo
 pip3 install torch==${TORCH} torchvision --index-url https://download.pytorch.org/whl/cu${CUDA_MAJOR}${CUDA_MINOR}
 echo "🎁🎁🎁 Successfully installed torch ${TORCH} with CUDA ${CUDA_VERSION}🎁🎁🎁"
 
+pip install git+https://github.com/facebookresearch/pytorch3d.git@v0.7.5 --no-deps
 pip install torch-scatter==2.0.9
 pip install spconv-cu113==2.3.6
 pip install gorilla-core==0.2.7.8
