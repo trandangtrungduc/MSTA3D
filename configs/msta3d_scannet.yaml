@@ -57,7 +57,7 @@ data:
   test:
     type: scannetv2
     data_root: data/scannetv2/
-    prefix: filtered_val_300
+    prefix: val # filtered_val_500
     suffix: _inst_nostuff.pth
     training: False
     with_label: True
@@ -80,6 +80,7 @@ model:
   decoder:
     num_layer: 6
     num_query: 300
+    param_query: False
     d_model: 256
     nhead: 8
     hidden_dim: 1024
@@ -96,7 +97,7 @@ model:
     score_thr: 0.0
     npoint_thr: 100
   iou_threshold: 0 # 0.9
-  dbscan_eps: 0 # 1.0
+  dbscan_eps: 0 #1.0
   norm_eval: False
   fix_module: []
 

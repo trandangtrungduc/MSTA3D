@@ -1,3 +1,4 @@
+import glob
 import gorilla
 import functools
 import pointgroup_ops
@@ -70,7 +71,7 @@ class MSTA3D(nn.Module):
             return self.predict(**batch)
 
     @cuda_cast
-    def loss(self, scan_ids, voxel_coords, p2v_map, v2p_map, spatial_shape, coords_float, feats, superpoints_h, superpoints_l, batch_offsets_h, batch_offsets_l, insts):
+    def loss(self, scan_ids, voxel_coords, p2v_map, v2p_map, spatial_shape, coords_float, feats, superpoints_h, superpoints_l, batch_offsets_h, batch_offsets_l, batch_offsets_p, insts):
 
         batch_size = len(batch_offsets_h) - 1
         feats = torch.cat((feats, coords_float), dim=1)
@@ -79,13 +80,13 @@ class MSTA3D(nn.Module):
 
         sp_feats_h, sp_feats_l = self.extract_feat(input, superpoints_h, superpoints_l, v2p_map)
 
-        out = self.decoder(sp_feats_h, sp_feats_l, batch_offsets_h, batch_offsets_l)
+        out = self.decoder(coords_float, sp_feats_h, sp_feats_l, batch_offsets_h, batch_offsets_l, batch_offsets_p)
 
         loss, loss_dict = self.criterion(out, insts)
         return loss, loss_dict
 
     @cuda_cast
-    def predict(self, scan_ids, voxel_coords, p2v_map, v2p_map, spatial_shape, coords_float, feats, superpoints_h, superpoints_l, batch_offsets_h, batch_offsets_l, insts):
+    def predict(self, scan_ids, voxel_coords, p2v_map, v2p_map, spatial_shape, coords_float, feats, superpoints_h, superpoints_l, batch_offsets_h, batch_offsets_l, batch_offsets_p, insts):
 
         batch_size = len(batch_offsets_h) - 1
         feats = torch.cat((feats, coords_float), dim=1)
@@ -94,7 +95,7 @@ class MSTA3D(nn.Module):
 
         sp_feats_h, sp_feats_l = self.extract_feat(input, superpoints_h, superpoints_l, v2p_map)
 
-        out = self.decoder(sp_feats_h, sp_feats_l, batch_offsets_h, batch_offsets_l)
+        out = self.decoder(coords_float, sp_feats_h, sp_feats_l, batch_offsets_h, batch_offsets_l, batch_offsets_p)
 
         ret = self.predict_by_feat(scan_ids, out, superpoints_h, coords_float, insts)
         return ret

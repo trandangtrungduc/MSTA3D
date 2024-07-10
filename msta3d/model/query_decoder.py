@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
+from pytorch3d.ops import sample_farthest_points
 from msta3d.model.utils import MultiheadAttention
-
+from msta3d.model.helpers_3detr import GenericMLP
+from msta3d.model.position_embedding import PositionEmbeddingCoordsSine
 
 class CrossAttentionLayer(nn.Module):
 
@@ -90,8 +92,9 @@ class MLP(nn.Sequential):
 class QueryDecoder(nn.Module):
 
     def __init__(self,
-                 num_layer=1,
-                 num_query=100,
+                 num_layer=6,
+                 num_query=200,
+                 param_query=True,
                  num_class=18,
                  in_channel=32,
                  d_model=256,
@@ -106,13 +109,25 @@ class QueryDecoder(nn.Module):
         super().__init__()
         self.num_layer = num_layer
         self.num_query = num_query
+        self.param_query = param_query
         self.iter_pred = iter_pred
         self.attn_mask = attn_mask
         self.d_model = d_model
 
-        self.query = nn.Embedding(num_query, self.d_model)
-        if pe:
-            self.pe = nn.Embedding(num_query, self.d_model)
+        if self.param_query:
+            self.query = nn.Embedding(num_query, self.d_model)
+            if pe:
+                self.pe = nn.Embedding(num_query, self.d_model)
+        else:
+            self.query_projection = GenericMLP(
+            input_dim=self.d_model,
+            hidden_dims=[self.d_model],
+            output_dim=self.d_model,
+            use_conv=True,
+            output_use_activation=True,
+            hidden_use_bias=True,
+        )
+            self.pos_enc = PositionEmbeddingCoordsSine(d_pos=self.d_model)
 
         self.input_proj = nn.Sequential(
             nn.Linear(in_channel, self.d_model), nn.LayerNorm(self.d_model), nn.ReLU())
@@ -188,13 +203,29 @@ class QueryDecoder(nn.Module):
             pred_masks, attn_masks = self.get_mask(query[:,:,:self.d_model-6], mask_feats, batch_offsets)
             return pred_labels, pred_scores, pred_masks, attn_masks
 
-    def forward(self, x_h, x_l, batch_offsets_h, batch_offsets_l):
+    def forward(self, coords_float, x_h, x_l, batch_offsets_h, batch_offsets_l, batch_offsets_p):
         B = len(batch_offsets_h) - 1
-        query = self.query.weight.unsqueeze(0).repeat(B, 1, 1)
-        if getattr(self, 'pe', None):
-            pe = self.pe.weight.unsqueeze(0).repeat(B, 1, 1)
+        if self.param_query:
+            query = self.query.weight.unsqueeze(0).repeat(B, 1, 1)
+            if getattr(self, 'pe', None):
+                pe = self.pe.weight.unsqueeze(0).repeat(B, 1, 1)
+            else:
+                pe = None
         else:
-            pe = None
+            sampled_coords, mins, maxs = [], [], []
+            for i in range(B):
+                coords = coords_float[batch_offsets_p[i]:batch_offsets_p[i + 1]]
+                _, fps_idx = sample_farthest_points(coords[None, ...].float(), K=self.num_query)
+                sampled_coords.append(coords[fps_idx.squeeze(0).long()])
+                mins.append(coords.min(dim=0)[0])
+                maxs.append(coords.max(dim=0)[0])
+            sampled_coords = torch.stack(sampled_coords)
+            mins = torch.stack(mins)
+            maxs = torch.stack(maxs)
+            pe = self.pos_enc(sampled_coords.float(), input_range=[mins, maxs])
+            pe = self.query_projection(pe)
+            pe = pe.permute((0, 2, 1))
+            query = torch.zeros_like(pe)
 
         prediction_labels, prediction_masks, prediction_scores, prediction_boxes, prediction_box_scores = [], [], [], [], []
         inst_feats_h, inst_feats_l = self.input_proj(x_h), self.input_proj(x_l)

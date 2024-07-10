@@ -380,8 +380,8 @@ class ScanNetDataset(Dataset):
             [],
             [],
         )
-        batch_offsets_h, batch_offsets_l = [0], [0]
-        superpoint_h_bias, superpoint_l_bias = 0, 0
+        batch_offsets_h, batch_offsets_l, batch_offsets_p = [0], [0], [0]
+        superpoint_h_bias, superpoint_l_bias, point_bias = 0, 0, 0
 
         for i, data in enumerate(batch):
             scan_id, coord, coord_float, feat, superpoint_h, superpoint_l, inst = data
@@ -391,6 +391,8 @@ class ScanNetDataset(Dataset):
             superpoint_l += superpoint_l_bias
             superpoint_l_bias = superpoint_l.max().item() + 1
             batch_offsets_l.append(superpoint_l_bias)
+            point_bias += coord_float.shape[0]
+            batch_offsets_p.append(point_bias)
 
             scan_ids.append(scan_id)
             coords.append(
@@ -404,6 +406,8 @@ class ScanNetDataset(Dataset):
 
         batch_offsets_h = torch.tensor(batch_offsets_h, dtype=torch.int)
         batch_offsets_l = torch.tensor(batch_offsets_l, dtype=torch.int)
+        batch_offsets_p = torch.tensor(batch_offsets_p, dtype=torch.int)
+
         coords = torch.cat(coords, 0)
         coords_float = torch.cat(coords_float, 0)
         feats = torch.cat(feats, 0)
@@ -428,5 +432,6 @@ class ScanNetDataset(Dataset):
             "superpoints_l": superpoints_l,
             "batch_offsets_h": batch_offsets_h,
             "batch_offsets_l": batch_offsets_l,
+            "batch_offsets_p": batch_offsets_p,
             "insts": insts,
         }
