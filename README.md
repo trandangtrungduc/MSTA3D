@@ -4,11 +4,11 @@
 
 Tran Dang Trung Duc, Byeongkeun Kang, Yeejin Lee
 
-## Overall Architecture
+## Overall Architecture :electron:
 
 <img src="docs\overall_structure.png" />
 
-## Introduction
+## Introduction :tada:
 
 Most existing methods suffer from two drawbacks:
 * Over-segmentation issue on large instances and background noise.
@@ -22,7 +22,7 @@ Solution:
 
 The snapshot from ScanNetV2 benchmark testing server on 11/04/2024.
 
-## Installation
+## Installation :hammer_and_wrench:
 
 Requirements
 
@@ -41,7 +41,7 @@ The following installation suppose `python=3.8` `pytorch=1.10.0` and `cuda=11.3`
   ```
 - Refer to `env_information/msta3d_environment.yml` for details of the environment we used.
 
-## Data Preprocessing
+## Data Preprocessing :nut_and_bolt:
 
 ### ScanNetV2 dataset
 
@@ -96,7 +96,7 @@ MSTA3D
 │   │   ├── val
 ```
 
-## Pretrained Model
+## Pretrained Model :arrow_down:
 
 Download [SSTNet](https://drive.google.com/file/d/1vucwdbm6pHRGlUZAYFdK9JmnPVerjNuD/view?usp=sharing) pretrained model
 
@@ -106,7 +106,7 @@ mkdir checkpoints
 mv ${SSTNET_PRETRAINED_PATH}/sstnet_pretrain.pth checkpoints/
 ```
 
-## Training
+## Training :airplane:
 ScanNetV2 dataset
 
 ```
@@ -118,7 +118,7 @@ ScanNet200 dataset
 python tools/train.py configs/msta3d_scannet200.yaml
 ```
 
-## Testing
+## Testing :straight_ruler:
 ScannetV2 dataset
 ```
 python tools/test.py configs/msta3d_scannet.yaml ${CHECKPOINT_PATH}/msta3d_scannet.pth
@@ -128,7 +128,7 @@ ScanNet200 dataset
 python tools/test.py configs/msta3d_scannet200.yaml ${CHECKPOINT_PATH}/ msta3d_scannet200.pth
 ```
 
-## Checkpoints
+## Checkpoints :checkered_flag:
 The results in the table may change a little because of randomness
 
 | Dataset | mAP | mAP<sub>50</sub> | mAP<sub>25</sub>  | Download |
@@ -154,11 +154,11 @@ python tools/visualize.py --prediction_path output/ --room_name ${SCENE_NAME}
 
 You can visualize by Open3D or MeshLab with `.ply` file.
 
-## Examples
+## Examples :rocket:
 
 <img src="docs\Example.png" />
 
-## Citation
+## Citation :link:
 
 If you find this work useful in your research, please cite:
 
@@ -172,6 +172,6 @@ Year = {2024},
 }
 ```
 
-## Acknowledgement
+## Acknowledgement :gift:
 
 Sincerely thanks for [SPFormer](https://github.com/sunjiahao1999/SPFormer/tree/main) repository. This repository is build upon them.
