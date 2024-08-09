@@ -1,0 +1,146 @@
+Scene: 10_points_GTv3_00
+Number of points: 969232
+Number of high spp: 50895.0
+Number of low spp: 23365.0
+Number of instances: 540.0
+Number of semantic labels: 14
+==============================
+Scene: 10_points_GTv3_01
+Number of points: 867529
+Number of high spp: 34551.0
+Number of low spp: 16182.0
+Number of instances: 364.0
+Number of semantic labels: 13
+==============================
+Scene: 10_points_GTv3_02
+Number of points: 855738
+Number of high spp: 42893.0
+Number of low spp: 19614.0
+Number of instances: 567.0
+Number of semantic labels: 15
+==============================
+Scene: 10_points_GTv3_03
+Number of points: 825595
+Number of high spp: 43013.0
+Number of low spp: 20631.0
+Number of instances: 489.0
+Number of semantic labels: 15
+==============================
+Scene: 15_points_GTv3_00
+Number of points: 913542
+Number of high spp: 39875.0
+Number of low spp: 16692.0
+Number of instances: 562.0
+Number of semantic labels: 14
+==============================
+Scene: 15_points_GTv3_01
+Number of points: 813138
+Number of high spp: 39741.0
+Number of low spp: 17734.0
+Number of instances: 572.0
+Number of semantic labels: 14
+==============================
+Scene: 15_points_GTv3_02
+Number of points: 794952
+Number of high spp: 28646.0
+Number of low spp: 15010.0
+Number of instances: 529.0
+Number of semantic labels: 15
+==============================
+Scene: 15_points_GTv3_03
+Number of points: 851700
+Number of high spp: 42717.0
+Number of low spp: 18719.0
+Number of instances: 597.0
+Number of semantic labels: 14
+==============================
+Scene: 20_points_GTv3_00
+Number of points: 996429
+Number of high spp: 51448.0
+Number of low spp: 23499.0
+Number of instances: 662.0
+Number of semantic labels: 15
+==============================
+Scene: 20_points_GTv3_01
+Number of points: 996117
+Number of high spp: 50645.0
+Number of low spp: 22891.0
+Number of instances: 636.0
+Number of semantic labels: 15
+==============================
+Scene: 20_points_GTv3_02
+Number of points: 944306
+Number of high spp: 52880.0
+Number of low spp: 24593.0
+Number of instances: 595.0
+Number of semantic labels: 15
+==============================
+Scene: 20_points_GTv3_03
+Number of points: 928918
+Number of high spp: 50411.0
+Number of low spp: 22712.0
+Number of instances: 592.0
+Number of semantic labels: 15
+==============================
+Scene: 25_points_GTv3_00
+Number of points: 875359
+Number of high spp: 40275.0
+Number of low spp: 18104.0
+Number of instances: 458.0
+Number of semantic labels: 15
+==============================
+Scene: 25_points_GTv3_01
+Number of points: 838998
+Number of high spp: 39744.0
+Number of low spp: 17163.0
+Number of instances: 512.0
+Number of semantic labels: 15
+==============================
+Scene: 25_points_GTv3_02
+Number of points: 920789
+Number of high spp: 39007.0
+Number of low spp: 17160.0
+Number of instances: 500.0
+Number of semantic labels: 15
+==============================
+Scene: 25_points_GTv3_03
+Number of points: 779024
+Number of high spp: 34053.0
+Number of low spp: 15288.0
+Number of instances: 389.0
+Number of semantic labels: 14
+==============================
+Scene: 5_points_GTv3_00
+Number of points: 862420
+Number of high spp: 30578.0
+Number of low spp: 15772.0
+Number of instances: 331.0
+Number of semantic labels: 14
+==============================
+Scene: 5_points_GTv3_01
+Number of points: 750742
+Number of high spp: 24239.0
+Number of low spp: 12523.0
+Number of instances: 285.0
+Number of semantic labels: 12
+==============================
+Scene: 5_points_GTv3_02
+Number of points: 887217
+Number of high spp: 30965.0
+Number of low spp: 13701.0
+Number of instances: 329.0
+Number of semantic labels: 12
+==============================
+Scene: 5_points_GTv3_03
+Number of points: 768723
+Number of high spp: 24715.0
+Number of low spp: 12159.0
+Number of instances: 446.0
+Number of semantic labels: 14
+==============================
+Total scans: 20
+Average point clouds: 872023.4
+Average high superpoints: 39564.55
+Average low superpoints: 18175.6
+Average instances: 497.75
+Average semantic labels: 14.25

@@ -91,8 +91,8 @@ def preparePthFiles(files, split, outPutFolder, AugTimes=0, crop_size=50):
                         outFileName = name + str(blockNum) + '_inst_nostuff'
                         coordShift[outFileName] = list(block[:, :3].mean(0))
 
-                    coords = np.ascontiguousarray(block[:, :3] - block[:, :3].mean(0))
-                    colors = np.ascontiguousarray(block[:, 3:6]) / 127.5 - 1
+                    coords = np.ascontiguousarray(block[:, :3])
+                    colors = np.ascontiguousarray(block[:, 3:6])
 
                     coords = np.float32(coords)
                     colors = np.float32(colors)
@@ -140,7 +140,7 @@ if __name__ == '__main__':
     preparePthFiles(trainFiles, split, trainOutDir, AugTimes=6)
 
     valSplit = [5, 10, 15, 20, 25]
-    split = 'val_250m'
+    split = 'val'
     valFiles = getFiles(filesOri, valSplit)
     valOutDir = split
     os.makedirs(valOutDir, exist_ok=True)

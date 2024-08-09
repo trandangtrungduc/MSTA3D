@@ -1,0 +1,83 @@
+Scene: 10_points_GTv3_00
+Average scores high spp per scan: 97.8012
+Average scores low spp per scan: 96.7629
+==========================================
+Scene: 10_points_GTv3_01
+Average scores high spp per scan: 97.573
+Average scores low spp per scan: 96.4459
+==========================================
+Scene: 10_points_GTv3_02
+Average scores high spp per scan: 97.6501
+Average scores low spp per scan: 96.5553
+==========================================
+Scene: 10_points_GTv3_03
+Average scores high spp per scan: 97.4401
+Average scores low spp per scan: 96.5218
+==========================================
+Scene: 15_points_GTv3_00
+Average scores high spp per scan: 97.6517
+Average scores low spp per scan: 97.074
+==========================================
+Scene: 15_points_GTv3_01
+Average scores high spp per scan: 97.1867
+Average scores low spp per scan: 96.4189
+==========================================
+Scene: 15_points_GTv3_02
+Average scores high spp per scan: 97.1573
+Average scores low spp per scan: 96.7241
+==========================================
+Scene: 15_points_GTv3_03
+Average scores high spp per scan: 97.5862
+Average scores low spp per scan: 96.7118
+==========================================
+Scene: 20_points_GTv3_00
+Average scores high spp per scan: 97.4555
+Average scores low spp per scan: 96.2365
+==========================================
+Scene: 20_points_GTv3_01
+Average scores high spp per scan: 97.4374
+Average scores low spp per scan: 96.2939
+==========================================
+Scene: 20_points_GTv3_02
+Average scores high spp per scan: 97.4955
+Average scores low spp per scan: 96.4128
+==========================================
+Scene: 20_points_GTv3_03
+Average scores high spp per scan: 97.2997
+Average scores low spp per scan: 95.9624
+==========================================
+Scene: 25_points_GTv3_00
+Average scores high spp per scan: 98.0111
+Average scores low spp per scan: 97.3589
+==========================================
+Scene: 25_points_GTv3_01
+Average scores high spp per scan: 97.9209
+Average scores low spp per scan: 97.3123
+==========================================
+Scene: 25_points_GTv3_02
+Average scores high spp per scan: 98.226
+Average scores low spp per scan: 97.6182
+==========================================
+Scene: 25_points_GTv3_03
+Average scores high spp per scan: 98.2462
+Average scores low spp per scan: 97.6856
+==========================================
+Scene: 5_points_GTv3_00
+Average scores high spp per scan: 97.4513
+Average scores low spp per scan: 96.6775
+==========================================
+Scene: 5_points_GTv3_01
+Average scores high spp per scan: 97.5716
+Average scores low spp per scan: 96.8911
+==========================================
+Scene: 5_points_GTv3_02
+Average scores high spp per scan: 97.9419
+Average scores low spp per scan: 97.1312
+==========================================
+Scene: 5_points_GTv3_03
+Average scores high spp per scan: 97.3521
+Average scores low spp per scan: 96.5601
+==========================================
+Total scans: 20
+Average high superpoint accuracy: 97.6228
+Average low superpoint accuracy: 96.7678
