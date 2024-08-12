@@ -26,8 +26,8 @@ dataloader:
 
 data:
   train:
-    type: scannetv2
-    data_root: data/scannetv2/
+    type: stpls3d
+    data_root: data/stpls3d/
     prefix: train
     suffix: _inst_nostuff.pth
     training: True
@@ -41,8 +41,8 @@ data:
       spatial_shape: [128, 512]
       max_npoint: 250000
   val:
-    type: scannetv2
-    data_root: data/scannetv2/
+    type: stpls3d
+    data_root: data/stpls3d/
     prefix: val
     suffix: _inst_nostuff.pth
     training: False
@@ -55,8 +55,8 @@ data:
       spatial_shape: [128, 512]
       max_npoint: 250000
   test:
-    type: scannetv2
-    data_root: data/scannetv2/
+    type: stpls3d
+    data_root: data/stpls3d/
     prefix: val
     suffix: _inst_nostuff.pth
     training: False
@@ -76,11 +76,11 @@ model:
   d_b: 32
   normalize_before: True
   return_blocks: True
-  num_class: 18
+  num_class: 14
   decoder:
     num_layer: 6
     num_hidden_layer: 2
-    num_query: 300
+    num_query: 200
     box_query: True
     merge_query: True
     d_o: 256
@@ -109,6 +109,6 @@ optimizer:
 
 lr_scheduler:
   type: PolyLR
-  max_iters: 512
+  max_iters: 352
   power: 0.9
   constant_ending: 0.0

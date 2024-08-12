@@ -73,19 +73,21 @@ model:
   input_channel: 6
   blocks: 5
   block_reps: 2
-  media: 32
+  d_b: 32
   normalize_before: True
   return_blocks: True
   num_class: 198
   decoder:
     num_layer: 6
+    num_hidden_layer: 2
     num_query: 300
-    d_model: 256
-    nhead: 8
+    box_query: True
+    merge_query: True
+    d_o: 256
+    num_head: 8
     hidden_dim: 1024
     dropout: 0.0
     activation_fn: gelu
-    attn_mask: True
     pe: False
   criterion:
     loss_weight: [0.5, 1.0, 1.0, 0.5, 1.0, 0.5]
@@ -95,8 +97,8 @@ model:
     topk_insts: 100
     score_thr: 0.0
     npoint_thr: 100
-  iou_threshold: 0 # 0.9
-  dbscan_eps: 0 # 1.0
+  iou_threshold: 0
+  dbscan_eps: 0
   norm_eval: False
   fix_module: []
 

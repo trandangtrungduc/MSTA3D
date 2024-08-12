@@ -1,19 +1,17 @@
-import argparse
-import datetime
-import gorilla
 import os
-import os.path as osp
-import shutil
 import time
 import torch
-from tensorboardX import SummaryWriter
+import shutil
+import gorilla
+import argparse
+import datetime
+import os.path as osp
 from tqdm import tqdm
-
-from msta3d.dataset import build_dataloader, build_dataset
-from msta3d.evaluation import ScanNetEval
+from tensorboardX import SummaryWriter
 from msta3d.model import MSTA3D
+from msta3d.evaluation import ScanNetEval
+from msta3d.dataset import build_dataloader, build_dataset
 from msta3d.utils import AverageMeter, get_root_logger
-
 
 def get_args():
 
@@ -77,7 +75,7 @@ def train(epoch, model, dataloader, optimizer, lr_scheduler, cfg, logger, writer
 def eval(epoch, model, dataloader, cfg, logger, writer):
 
     logger.info('Validation')
-    pred_insts, gt_insts = [], []
+    pred_insts, gt_insts, coord_floats = [], [], []
     progress_bar = tqdm(total=len(dataloader))
     val_dataset = dataloader.dataset
 
@@ -86,25 +84,28 @@ def eval(epoch, model, dataloader, cfg, logger, writer):
         result = model(batch, mode='predict')
         pred_insts.append(result['pred_instances'])
         gt_insts.append(result['gt_instances'])
+        coord_floats.append(result['coord_float'])
         progress_bar.update()
     progress_bar.close()
 
-    logger.info('Evaluate instance segmentation')
+    logger.info('Evaluate instance segmentation & object detection')
     if cfg.data.val.type == "scannet200":
         scannet_eval = ScanNetEval(val_dataset.CLASSES, dataset_name=cfg.data.val.type)
+        eval_inst_res = scannet_eval.evaluate(pred_insts, gt_insts, coord_floats)
     else:
         scannet_eval = ScanNetEval(val_dataset.CLASSES)
-    eval_res = scannet_eval.evaluate(pred_insts, gt_insts)
+        eval_inst_res, eval_box_res = scannet_eval.evaluate(pred_insts, gt_insts, coord_floats)
 
-    writer.add_scalar('val/AP', eval_res['all_ap'], epoch)
-    writer.add_scalar('val/AP_50', eval_res['all_ap_50%'], epoch)
-    writer.add_scalar('val/AP_25', eval_res['all_ap_25%'], epoch)
-    logger.info('AP: {:.3f}. AP_50: {:.3f}. AP_25: {:.3f}'.format(eval_res['all_ap'], eval_res['all_ap_50%'], eval_res['all_ap_25%']))
+    writer.add_scalar('val/AP', eval_inst_res['all_ap'], epoch)
+    writer.add_scalar('val/AP_50', eval_inst_res['all_ap_50%'], epoch)
+    writer.add_scalar('val/AP_25', eval_inst_res['all_ap_25%'], epoch)
+    logger.info('AP: {:.3f}. AP_50: {:.3f}. AP_25: {:.3f}'.format(eval_inst_res['all_ap'], eval_inst_res['all_ap_50%'], eval_inst_res['all_ap_25%']))
 
     save_file = osp.join(cfg.work_dir, f'epoch_{epoch:04d}.pth')
     gorilla.save_checkpoint(model, save_file)
 
 def main():
+
     args = get_args()
     cfg = gorilla.Config.fromfile(args.config)
     if args.work_dir:
@@ -122,6 +123,8 @@ def main():
 
     gorilla.set_random_seed(cfg.train.seed)
     model = MSTA3D(**cfg.model).cuda()
+    # logger.info(f'Model: {model}')
+
     count_parameters = gorilla.parameter_count(model)['']
     logger.info(f'Parameters: {count_parameters / 1e6:.2f}M')
 

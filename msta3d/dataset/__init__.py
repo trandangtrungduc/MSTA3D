@@ -1,13 +1,14 @@
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 
+from .stpls3d import STPLS3DDataset
 from .scannetv2 import ScanNetDataset
 from .scannet200 import ScanNet200Dataset
-from .s3dis import S3DISDataset
 
-__all__ = ['ScanNetDataset', 'ScanNet200Dataset', 'S3DISDataset', 'build_dataset', 'build_dataloader']
+__all__ = ['ScanNetDataset', 'ScanNet200Dataset', 'STPLS3DDataset', 'build_dataset', 'build_dataloader']
 
 def build_dataset(data_cfg, logger):
+
     assert 'type' in data_cfg
     _data_cfg = data_cfg.copy()
     _data_cfg['logger'] = logger
@@ -16,14 +17,21 @@ def build_dataset(data_cfg, logger):
         return ScanNetDataset(**_data_cfg)
     elif data_type == 'scannet200':
         return ScanNet200Dataset(**_data_cfg)
-    elif data_type == 's3dis':
-        return S3DISDataset(**_data_cfg)
+    elif data_type == "stpls3d":
+        return STPLS3DDataset(**_data_cfg)
     else:
         raise ValueError(f'Unknown {data_type}')
 
-def build_dataloader(dataset, batch_size=1, num_workers=1, training=True, dist=False, persistent_workers=True):
+def build_dataloader(dataset,
+                     batch_size=1,
+                     num_workers=1,
+                     training=True,
+                     dist=False,
+                     persistent_workers=True):
+
     shuffle = training
     sampler = DistributedSampler(dataset, shuffle=shuffle) if dist else None
+
     if sampler is not None:
         shuffle = False
     if training:

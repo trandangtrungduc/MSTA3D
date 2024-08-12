@@ -1,6 +1,5 @@
 import torch
 import numpy as np
-import os.path as osp
 from .scannetv2 import ScanNetDataset
 
 CLASS_LABELS_200 = (
@@ -209,8 +208,8 @@ CLASS_LABELS_200 = (
 class ScanNet200Dataset(ScanNetDataset):
     NYU_ID = [
         1,
-        3,
         2,
+        3,
         4,
         5,
         6,
@@ -1010,6 +1009,7 @@ class ScanNet200Dataset(ScanNetDataset):
     )
 
     def load(self, filename):
+
         if self.with_label:
             xyz, rgb, superpoint_h, superpoints_l, semantic_label, instance_label = torch.load(filename)
             instance_label[semantic_label <= 1] = -100

@@ -1,21 +1,28 @@
-# Adapted from https://github.com/VinAIResearch/ISBNet/blob/master/isbnet/evaluation/instance_eval.py
+# Referred to https://github.com/VinAIResearch/ISBNet/ and https://github.com/oneformer3d/oneformer3d
 # Modified by Duc Tran
 
 import numpy as np
+from tqdm import tqdm
 from copy import deepcopy
 import multiprocessing as mp
 
-from msta3d.dataset.scannet200 import ScanNet200Dataset
 from ..utils import rle_decode
 from .instance_eval_util import get_instances
-
+from msta3d.dataset.scannet200 import ScanNet200Dataset
 
 class ScanNetEval(object):
 
-    def __init__(self, class_labels, min_npoint=None, iou_type=None, use_label=True, dataset_name="scannetv2"):
+    def __init__(self,
+                 class_labels,
+                 min_npoint=None,
+                 iou_type=None,
+                 use_label=True,
+                 dataset_name="scannetv2"):
+
         self.dataset_name = dataset_name
         self.valid_class_labels = class_labels
         self.valid_class_ids = np.arange(len(class_labels)) + 1
+
         self.id2label = {}
         self.label2id = {}
         for i in range(len(self.valid_class_ids)):
@@ -40,16 +47,16 @@ class ScanNetEval(object):
             self.eval_class_labels = ['class_agnostic']
 
     def evaluate_matches(self, matches):
+
         ious = self.ious
         min_region_sizes = [self.min_region_sizes[0]]
         dist_threshes = [self.distance_threshes[0]]
         dist_confs = [self.distance_confs[0]]
 
         ap = np.zeros((len(dist_threshes), len(self.eval_class_labels), len(ious)), float)
-        rc = np.zeros((len(dist_threshes), len(self.eval_class_labels), len(ious)), float)
-        for di, (min_region_size, distance_thresh,
-                 distance_conf) in enumerate(zip(min_region_sizes, dist_threshes, dist_confs)):
-
+        pr_rc = np.zeros((2, len(self.eval_class_labels), len(ious)), float)
+        for di, (min_region_size, distance_thresh, distance_conf) in enumerate(zip(min_region_sizes, dist_threshes, dist_confs)):
+            progress_bar = tqdm(total=len(ious))
             for oi, iou_th in enumerate(ious):
                 pred_visited = {}
                 for m in matches:
@@ -137,11 +144,9 @@ class ScanNetEval(object):
                         y_true_sorted_cumsum = np.cumsum(y_true_sorted)
 
                         if len(y_true_sorted) == 0:
-                            ap_current = 0.0
-                            rc_current = 0.0
                             continue
 
-                        (thresholds, unique_indices) = np.unique(y_score_sorted, return_index=True)
+                        (_, unique_indices) = np.unique(y_score_sorted, return_index=True)
                         num_prec_recall = len(unique_indices) + 1
 
                         num_examples = len(y_score_sorted)
@@ -160,10 +165,13 @@ class ScanNetEval(object):
                             precision[idx_res] = p
                             recall[idx_res] = r
 
-                        rc_current = recall[0]
-
                         precision[-1] = 1.
                         recall[-1] = 0.
+
+                        f1_score = 2 * precision * recall / (precision + recall + 0.0001)
+                        f1_argmax = f1_score.argmax()
+                        best_pr = precision[f1_argmax]
+                        best_rc = recall[f1_argmax]
 
                         recall_for_conv = np.copy(recall)
                         recall_for_conv = np.append(recall_for_conv[0], recall_for_conv)
@@ -174,36 +182,52 @@ class ScanNetEval(object):
 
                     elif has_gt:
                         ap_current = 0.0
-                        rc_current = 0.0
+                        best_pr = 0
+                        best_rc = 0
                     else:
                         ap_current = float('nan')
-                        rc_current = float('nan')
+                        best_pr = float('nan')
+                        best_rc = float('nan')
                     ap[di, li, oi] = ap_current
-                    rc[di, li, oi] = rc_current
-        return ap, rc
+                    pr_rc[0, li, oi] = best_pr
+                    pr_rc[1, li, oi] = best_rc
 
-    def compute_averages(self, aps, rcs):
-        d_inf = 0
-        o50 = np.where(np.isclose(self.ious, 0.5))
+                progress_bar.update()
+            progress_bar.close()
+
+        return ap, pr_rc
+
+    def compute_averages(self, aps, pr_rc):
+
+        d_pre = 0
+        d_rec = 1
         o25 = np.where(np.isclose(self.ious, 0.25))
+        o50 = np.where(np.isclose(self.ious, 0.5))
         oAllBut25 = np.where(np.logical_not(np.isclose(self.ious, 0.25)))
-        avg_dict = {}
 
-        avg_dict['all_ap'] = np.nanmean(aps[d_inf, :, oAllBut25])
-        avg_dict['all_ap_50%'] = np.nanmean(aps[d_inf, :, o50])
-        avg_dict['all_ap_25%'] = np.nanmean(aps[d_inf, :, o25])
-        avg_dict['all_rc'] = np.nanmean(rcs[d_inf, :, oAllBut25])
-        avg_dict['all_rc_50%'] = np.nanmean(rcs[d_inf, :, o50])
-        avg_dict['all_rc_25%'] = np.nanmean(rcs[d_inf, :, o25])
+        avg_dict = {}
+        avg_dict['all_ap'] = np.nanmean(aps[d_pre, :, oAllBut25])
+        avg_dict['all_ap_25%'] = np.nanmean(aps[d_pre, :, o25])
+        avg_dict['all_ap_50%'] = np.nanmean(aps[d_pre, :, o50])
+        avg_dict['all_pc'] = np.nanmean(pr_rc[d_pre, :, oAllBut25])
+        avg_dict['all_pc_25%'] = np.nanmean(pr_rc[d_pre, :, o25])
+        avg_dict['all_pc_50%'] = np.nanmean(pr_rc[d_pre, :, o50])
+        avg_dict['all_rc'] = np.nanmean(pr_rc[d_rec, :, oAllBut25])
+        avg_dict['all_rc_25%'] = np.nanmean(pr_rc[d_rec, :, o25])
+        avg_dict['all_rc_50%'] = np.nanmean(pr_rc[d_rec, :, o50])
+
         avg_dict['classes'] = {}
         for (li, label_name) in enumerate(self.eval_class_labels):
             avg_dict['classes'][label_name] = {}
-            avg_dict['classes'][label_name]['ap'] = np.average(aps[d_inf, li, oAllBut25])
-            avg_dict['classes'][label_name]['ap50%'] = np.average(aps[d_inf, li, o50])
-            avg_dict['classes'][label_name]['ap25%'] = np.average(aps[d_inf, li, o25])
-            avg_dict['classes'][label_name]['rc'] = np.average(rcs[d_inf, li, oAllBut25])
-            avg_dict['classes'][label_name]['rc50%'] = np.average(rcs[d_inf, li, o50])
-            avg_dict['classes'][label_name]['rc25%'] = np.average(rcs[d_inf, li, o25])
+            avg_dict['classes'][label_name]['ap'] = np.average(aps[d_pre, li, oAllBut25])
+            avg_dict['classes'][label_name]['ap25%'] = np.average(aps[d_pre, li, o25])
+            avg_dict['classes'][label_name]['ap50%'] = np.average(aps[d_pre, li, o50])
+            avg_dict['classes'][label_name]['pc'] = np.average(pr_rc[d_pre, li, oAllBut25])
+            avg_dict['classes'][label_name]['pc25%'] = np.average(pr_rc[d_pre, li, o25])
+            avg_dict['classes'][label_name]['pc50%'] = np.average(pr_rc[d_pre, li, o50])
+            avg_dict['classes'][label_name]['rc'] = np.average(pr_rc[d_rec, li, oAllBut25])
+            avg_dict['classes'][label_name]['rc25%'] = np.average(pr_rc[d_rec, li, o25])
+            avg_dict['classes'][label_name]['rc50%'] = np.average(pr_rc[d_rec, li, o50])
         return avg_dict
 
     def assign_instances_for_scan(self, preds, gts):
@@ -277,8 +301,9 @@ class ScanNetEval(object):
 
         return gt2pred, pred2gt
 
-    def assign_boxes_for_scan(self, preds, gts, coords):
-        gt_instances = get_instances(gts, self.valid_class_ids, self.valid_class_labels, self.id2label, coords=coords)
+    def assign_boxes_for_scan(self, preds, gts, coord_floats):
+
+        gt_instances = get_instances(gts, self.valid_class_ids, self.valid_class_labels, self.id2label, coord_floats=coord_floats)
 
         if self.use_label:
             gt2pred = deepcopy(gt_instances)
@@ -293,10 +318,12 @@ class ScanNetEval(object):
             for gt in agnostic_instances:
                 gt["matched_pred"] = []
             gt2pred[self.eval_class_labels[0]] = agnostic_instances
+
         pred2gt = {}
         for label in self.eval_class_labels:
             pred2gt[label] = []
         num_pred_instances = 0
+        bool_void = np.logical_not(np.in1d(gts // 1000, self.valid_class_ids))
 
         for pred in preds:
             if self.use_label:
@@ -307,17 +334,31 @@ class ScanNetEval(object):
             else:
                 label_name = self.eval_class_labels[0]
             conf = pred["conf"]
+            pred_mask = pred['pred_mask']
+            if isinstance(pred_mask, dict):
+                pred_mask = rle_decode(pred_mask)
+            assert pred_mask.shape[0] == gts.shape[0]
+            pred_mask = np.not_equal(pred_mask, 0)
+            num = np.count_nonzero(pred_mask)
+            if num < self.min_region_sizes[0]:
+                continue
 
             pred_instance = {}
             pred_instance["filename"] = "{}_{}".format(pred["scan_id"], num_pred_instances)
             pred_instance["pred_id"] = num_pred_instances
             pred_instance["label_id"] = label_id if self.use_label else None
             pred_instance["confidence"] = conf
-            pred_box_min = pred["box"][:3]
-            pred_box_max = pred["box"][3:]
-            pred_vol = np.prod(np.clip((pred_box_max - pred_box_min), a_min=0.0, a_max=None))
-            matched_gt = []
+            pred_instance['vert_count'] = num
+            pred_instance['void_intersection'] = np.count_nonzero(np.logical_and(bool_void, pred_mask))
 
+            # pred_box_min = pred["pred_box"][:3]
+            # pred_box_max = pred["pred_box"][3:]
+            pred_box_min = coord_floats[pred_mask, :].min(0)
+            pred_box_max = coord_floats[pred_mask, :].max(0)
+
+            pred_vol = np.prod(np.clip((pred_box_max - pred_box_min), a_min=0.0, a_max=None), -1)
+
+            matched_gt = []
             for (gt_num, gt_inst) in enumerate(gt2pred[label_name]):
                 gt_box_min = gt_inst["box"][:3]
                 gt_box_max = gt_inst["box"][3:]
@@ -325,20 +366,21 @@ class ScanNetEval(object):
                     np.clip(
                         np.minimum(gt_box_max, pred_box_max) - np.maximum(gt_box_min, pred_box_min),
                         a_min=0.0,
-                        a_max=None,
-                    )
+                        a_max=None
+                    ), -1
                 )
                 if intersection > 0:
                     gt_copy = gt_inst.copy()
                     pred_copy = pred_instance.copy()
                     gt_copy["intersection"] = intersection
                     pred_copy["intersection"] = intersection
-                    gt_vol = np.prod(np.clip((gt_box_max - gt_box_min), a_min=0.0, a_max=None))
+                    gt_vol = np.prod(np.clip((gt_box_max - gt_box_min), a_min=0.0, a_max=None), -1)
                     iou = float(intersection) / (gt_vol + pred_vol - intersection)
                     gt_copy["iou"] = iou
                     pred_copy["iou"] = iou
                     matched_gt.append(gt_copy)
                     gt2pred[label_name][gt_num]["matched_pred"].append(pred_copy)
+
             pred_instance["matched_gt"] = matched_gt
             num_pred_instances += 1
             num_pred_instances += 1
@@ -346,10 +388,81 @@ class ScanNetEval(object):
             pred2gt[label_name].append(pred_instance)
         return gt2pred, pred2gt
 
-    def print_ap_scannet200(self, avgs):
+    def print_results(self, avgs):
+
+        sep = ''
+        col1 = ':'
+        lineLen = 90
+
+        print()
+        print('#' * lineLen)
+        line = ''
+        line += '{:<15}'.format('instance') + sep + col1
+        line += '{:>8}'.format('AP') + sep
+        line += '{:>8}'.format('AP_25%') + sep
+        line += '{:>8}'.format('AP_50%') + sep
+        line += '{:>8}'.format('PC') + sep
+        line += '{:>8}'.format('PC_25%') + sep
+        line += '{:>8}'.format('PC_50%') + sep
+        line += '{:>8}'.format('RC') + sep
+        line += '{:>8}'.format('RC_25%') + sep
+        line += '{:>8}'.format('RC_50%') + sep
+
+        print(line)
+        print('#' * lineLen)
+
+        for (_, label_name) in enumerate(self.eval_class_labels):
+            ap_avg = avgs['classes'][label_name]['ap']
+            ap_25o = avgs['classes'][label_name]['ap25%']
+            ap_50o = avgs['classes'][label_name]['ap50%']
+            pc_avg = avgs['classes'][label_name]['pc']
+            pc_25o = avgs['classes'][label_name]['pc25%']
+            pc_50o = avgs['classes'][label_name]['pc50%']
+            rc_avg = avgs['classes'][label_name]['rc']
+            rc_25o = avgs['classes'][label_name]['rc25%']
+            rc_50o = avgs['classes'][label_name]['rc50%']
+            line = '{:<15}'.format(label_name) + sep + col1
+            line += sep + '{:>8.3f}'.format(ap_avg) + sep
+            line += sep + '{:>8.3f}'.format(ap_25o) + sep
+            line += sep + '{:>8.3f}'.format(ap_50o) + sep
+            line += sep + '{:>8.3f}'.format(pc_avg) + sep
+            line += sep + '{:>8.3f}'.format(pc_25o) + sep
+            line += sep + '{:>8.3f}'.format(pc_50o) + sep
+            line += sep + '{:>8.3f}'.format(rc_avg) + sep
+            line += sep + '{:>8.3f}'.format(rc_25o) + sep
+            line += sep + '{:>8.3f}'.format(rc_50o) + sep
+            print(line)
+
+        all_ap_avg = avgs['all_ap']
+        all_ap_25o = avgs['all_ap_25%']
+        all_ap_50o = avgs['all_ap_50%']
+        all_pc_avg = avgs['all_pc']
+        all_pc_25o = avgs['all_pc_25%']
+        all_pc_50o = avgs['all_pc_50%']
+        all_rc_avg = avgs['all_pc']
+        all_rc_25o = avgs['all_rc_25%']
+        all_rc_50o = avgs['all_rc_50%']
+
+        print('-' * lineLen)
+        line = '{:<15}'.format('average') + sep + col1
+        line += '{:>8.3f}'.format(all_ap_avg) + sep
+        line += '{:>8.3f}'.format(all_ap_25o) + sep
+        line += '{:>8.3f}'.format(all_ap_50o) + sep
+        line += '{:>8.3f}'.format(all_pc_avg) + sep
+        line += '{:>8.3f}'.format(all_pc_25o) + sep
+        line += '{:>8.3f}'.format(all_pc_50o) + sep
+        line += '{:>8.3f}'.format(all_rc_avg) + sep
+        line += '{:>8.3f}'.format(all_rc_25o) + sep
+        line += '{:>8.3f}'.format(all_rc_50o) + sep
+        print(line)
+        print('#' * lineLen)
+        print()
+
+    def print_scannet200(self, avgs):
+
         print("ScanNet200 Evaluation")
         head_results, tail_results, common_results = [], [], []
-        for (li, class_name) in enumerate(self.eval_class_labels):
+        for (_, class_name) in enumerate(self.eval_class_labels):
             ap_avg = avgs["classes"][class_name]["ap"]
             ap_50o = avgs["classes"][class_name]["ap50%"]
             ap_25o = avgs["classes"][class_name]["ap25%"]
@@ -412,71 +525,24 @@ class ScanNetEval(object):
         print("#" * lineLen)
         print()
 
-    def print_results(self, avgs):
-        sep = ''
-        col1 = ':'
-        lineLen = 64
-
-        print()
-        print('#' * lineLen)
-        line = ''
-        line += '{:<15}'.format('what') + sep + col1
-        line += '{:>8}'.format('AP') + sep
-        line += '{:>8}'.format('AP_50%') + sep
-        line += '{:>8}'.format('AP_25%') + sep
-        line += '{:>8}'.format('AR') + sep
-        line += '{:>8}'.format('RC_50%') + sep
-        line += '{:>8}'.format('RC_25%') + sep
-
-        print(line)
-        print('#' * lineLen)
-
-        for (li, label_name) in enumerate(self.eval_class_labels):
-            ap_avg = avgs['classes'][label_name]['ap']
-            ap_50o = avgs['classes'][label_name]['ap50%']
-            ap_25o = avgs['classes'][label_name]['ap25%']
-            rc_avg = avgs['classes'][label_name]['rc']
-            rc_50o = avgs['classes'][label_name]['rc50%']
-            rc_25o = avgs['classes'][label_name]['rc25%']
-            line = '{:<15}'.format(label_name) + sep + col1
-            line += sep + '{:>8.3f}'.format(ap_avg) + sep
-            line += sep + '{:>8.3f}'.format(ap_50o) + sep
-            line += sep + '{:>8.3f}'.format(ap_25o) + sep
-            line += sep + '{:>8.3f}'.format(rc_avg) + sep
-            line += sep + '{:>8.3f}'.format(rc_50o) + sep
-            line += sep + '{:>8.3f}'.format(rc_25o) + sep
-            print(line)
-
-        all_ap_avg = avgs['all_ap']
-        all_ap_50o = avgs['all_ap_50%']
-        all_ap_25o = avgs['all_ap_25%']
-        all_rc_avg = avgs['all_rc']
-        all_rc_50o = avgs['all_rc_50%']
-        all_rc_25o = avgs['all_rc_25%']
-
-        print('-' * lineLen)
-        line = '{:<15}'.format('average') + sep + col1
-        line += '{:>8.3f}'.format(all_ap_avg) + sep
-        line += '{:>8.3f}'.format(all_ap_50o) + sep
-        line += '{:>8.3f}'.format(all_ap_25o) + sep
-        line += '{:>8.3f}'.format(all_rc_avg) + sep
-        line += '{:>8.3f}'.format(all_rc_50o) + sep
-        line += '{:>8.3f}'.format(all_rc_25o) + sep
-        print(line)
-        print('#' * lineLen)
-        print()
-
     def write_result_file(self, avgs, filename):
+
         _SPLITTER = ','
         with open(filename, 'w') as f:
-            f.write(_SPLITTER.join(['class', 'class id', 'ap', 'ap50', 'ap25']) + '\n')
+            f.write(_SPLITTER.join(['class', 'class id', 'ap', 'ap25', 'ap50', 'pc', 'pc25', 'pc50', 'rc', 'rc25', 'rc50']) + '\n')
             for class_name in self.eval_class_labels:
                 ap = avgs['classes'][class_name]['ap']
-                ap50 = avgs['classes'][class_name]['ap50%']
                 ap25 = avgs['classes'][class_name]['ap25%']
-                f.write(_SPLITTER.join([str(x) for x in [class_name, ap, ap50, ap25]]) + '\n')
+                ap50 = avgs['classes'][class_name]['ap50%']
+                pc = avgs['classes'][class_name]['pc']
+                pc25 = avgs['classes'][class_name]['pc25%']
+                pc50 = avgs['classes'][class_name]['pc50%']
+                rc = avgs['classes'][class_name]['rc']
+                rc25 = avgs['classes'][class_name]['rc25%']
+                rc50 = avgs['classes'][class_name]['rc50%']
+                f.write(_SPLITTER.join([str(x) for x in [class_name, ap, ap25, ap50, pc, pc25, pc50, rc, rc25, rc50]]) + '\n')
 
-    def evaluate(self, pred_list, gt_list):
+    def evaluate(self, pred_list, gt_list, coord_floats):
         """
         Args:
             pred_list:
@@ -488,6 +554,7 @@ class ScanNetEval(object):
                     for each point:
                         gt_id = class_id * 1000 + instance_id
         """
+
         pool = mp.Pool()
         results = pool.starmap(self.assign_instances_for_scan, zip(pred_list, gt_list))
         pool.close()
@@ -499,11 +566,28 @@ class ScanNetEval(object):
             matches[matches_key] = {}
             matches[matches_key]['gt'] = gt2pred
             matches[matches_key]['pred'] = pred2gt
-        ap_scores, rc_scores = self.evaluate_matches(matches)
-        avgs = self.compute_averages(ap_scores, rc_scores)
-
+        print("Evaluate instance segmentation")
+        ap_scores, pr_rc_scores = self.evaluate_matches(matches)
+        avgs = self.compute_averages(ap_scores, pr_rc_scores)
         self.print_results(avgs)
-        if self.dataset_name == "scannet200":
-            self.print_ap_scannet200(avgs)
 
+        if self.dataset_name == "scannet200":
+            self.print_scannet200(avgs)
+        else:
+            pool = mp.Pool()
+            results_box = pool.starmap(self.assign_boxes_for_scan, zip(pred_list, gt_list, coord_floats))
+            pool.close()
+            pool.join()
+            matches_box = {}
+            for i, (gt2pred, pred2gt) in enumerate(results_box):
+                matches_box_key = f'gt_{i}'
+                matches_box[matches_box_key] = {}
+                matches_box[matches_box_key]['gt'] = gt2pred
+                matches_box[matches_box_key]['pred'] = pred2gt
+            print("Evaluate object detection")
+            ap_box_scores, pr_rc_box_scores = self.evaluate_matches(matches_box)
+            avgs_box = self.compute_averages(ap_box_scores, pr_rc_box_scores)
+            self.print_results(avgs_box)
+
+            return avgs, avgs_box
         return avgs

@@ -1,9 +1,10 @@
+import os
 import json
 import numpy as np
-import os
 from plyfile import PlyData
 
 def transform_points(matrix, points):
+
     assert len(points.shape) == 2 and points.shape[1] == 3
     num_points = points.shape[0]
     p = np.concatenate([points, np.ones((num_points, 1))], axis=1)
@@ -14,18 +15,21 @@ def transform_points(matrix, points):
 
 
 def export_ids(filename, ids):
+
     with open(filename, 'w') as f:
         for id in ids:
             f.write('%d\n' % id)
 
 
 def load_ids(filename):
+
     ids = open(filename).read().splitlines()
     ids = np.array(ids, dtype=np.int64)
     return ids
 
 
 def read_mesh_vertices(filename):
+
     assert os.path.isfile(filename)
     with open(filename, 'rb') as f:
         plydata = PlyData.read(f)
@@ -39,6 +43,7 @@ def read_mesh_vertices(filename):
 
 # export 3d instance labels for instance evaluation
 def export_instance_ids_for_eval(filename, label_ids, instance_ids):
+
     assert label_ids.shape[0] == instance_ids.shape[0]
     output_mask_path_relative = 'pred_mask'
     name = os.path.splitext(os.path.basename(filename))[0]
@@ -62,8 +67,6 @@ def export_instance_ids_for_eval(filename, label_ids, instance_ids):
 
 
 # ------------ Instance Utils ------------ #
-
-
 class Instance(object):
     instance_id = 0
     label_id = 0
@@ -71,12 +74,21 @@ class Instance(object):
     med_dist = -1
     dist_conf = 0.0
 
-    def __init__(self, mesh_vert_instances, instance_id):
+    def __init__(self, mesh_vert_instances, instance_id, coord_floats=None):
         if (instance_id == -1):
             return
         self.instance_id = int(instance_id)
         self.label_id = int(self.get_label_id(instance_id))
         self.vert_count = int(self.get_instance_verts(mesh_vert_instances, instance_id))
+
+        if coord_floats is None:
+            self.box = np.zeros((6))
+        else:
+            self.box = self.get_inst_box(mesh_vert_instances, instance_id, coord_floats)
+
+    def get_inst_box(self, mesh_vert_instances, instance_id, coord_floats):
+        inst_box = coord_floats[mesh_vert_instances == instance_id]
+        return np.concatenate([inst_box.min(0), inst_box.max(0)])
 
     def get_label_id(self, instance_id):
         return int(instance_id // 1000)
@@ -94,6 +106,7 @@ class Instance(object):
         dict['vert_count'] = self.vert_count
         dict['med_dist'] = self.med_dist
         dict['dist_conf'] = self.dist_conf
+        dict["box"] = self.box
         return dict
 
     def from_json(self, data):
@@ -109,9 +122,11 @@ class Instance(object):
 
 
 def read_instance_prediction_file(filename, pred_path):
+
     lines = open(filename).read().splitlines()
     instance_info = {}
     abs_pred_path = os.path.abspath(pred_path)
+
     for line in lines:
         parts = line.split(' ')
         if len(parts) != 3:
@@ -135,7 +150,8 @@ def read_instance_prediction_file(filename, pred_path):
     return instance_info
 
 
-def get_instances(ids, class_ids, class_labels, id2label):
+def get_instances(ids, class_ids, class_labels, id2label, coord_floats=None):
+
     instances = {}
     for label in class_labels:
         instances[label] = []
@@ -143,7 +159,7 @@ def get_instances(ids, class_ids, class_labels, id2label):
     for id in instance_ids:
         if id == 0:
             continue
-        inst = Instance(ids, id)
+        inst = Instance(ids, id, coord_floats=coord_floats)
         if inst.label_id in class_ids:
             instances[id2label[inst.label_id]].append(inst.to_dict())
     return instances

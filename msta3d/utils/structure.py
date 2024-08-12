@@ -2,7 +2,6 @@ import torch
 from numpy import ndarray
 from typing import Any, Dict, Union
 
-
 class Instances3D:
     """
     This class represents a list of instances in a scene.
