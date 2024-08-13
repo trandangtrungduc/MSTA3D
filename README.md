@@ -133,8 +133,8 @@ The results in the table may change a little because of randomness
 
 | Dataset | mAP | mAP<sub>50</sub> | mAP<sub>25</sub>  | Download |
 |:-------:|:----------------:|:----------------:|:----:|:--------:|
-| ScanNetV2 | 58.4 | 77.0 | 85.4 | [model]() &#124; [log](exps/scannetv2/msta3d_scannet/msta3d_scannet.log) &#124; [config](exps/scannetv2/msta3d_scannet/msta3d_scannet.yaml) |
-| ScanNet200 | 26.2 | 35.2 | 40.1 | [model]() &#124; [log](exps/scannet200/msta3d_scannet200/msta3d_scannet200.log) &#124;[config](exps/scannet200/msta3d_scannet200/msta3d_scannet200.yaml) |
+| ScanNetV2 | 58.4 | 77.0 | 85.4 | [model](https://huggingface.co/TDTDuc/MSTA3D/tree/main) &#124; [config](configs/msta3d_scannet.yaml) |
+| ScanNet200 | 26.2 | 35.2 | 40.1 | [model](https://huggingface.co/TDTDuc/MSTA3D/tree/main) &#124; [config](configs/msta3d_scannet200.yaml) |
 
 
 ## :art: Visualization :art:

@@ -78,7 +78,7 @@ COLOR_DETECTRON2 = np.array(
         0.857, 0.857, 0.857,
     ]).astype(np.float32).reshape(-1, 3) * 255
 
-def get_coords_colors(subset, scene, spp):
+def get_coords_colors(scene, spp):
     coords, colors, sem_label = scene[0], scene[1], scene[4]
     spp_label = scene[spp].astype(int)
 
@@ -113,7 +113,7 @@ if __name__ == '__main__':
     for scene_path in scene_paths:
         room_name = scene_path[-29:-17]
         scene = torch.load(scene_path)
-        coords, colors = get_coords_colors(subset, scene, spp)
+        coords, colors = get_coords_colors(scene, spp)
 
         pc = o3d.geometry.PointCloud()
         pc.points = o3d.utility.Vector3dVector(coords)
