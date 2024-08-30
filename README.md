@@ -129,7 +129,8 @@ python tools/test.py configs/msta3d_scannet200.yaml ${CHECKPOINT_PATH}/ msta3d_s
 ```
 
 ## :checkered_flag: Checkpoints :checkered_flag:
-The results in the table may change a little because of randomness
+The results in the table may change a little because of randomness.
+Put the downloaded checkpoint files to `checkpoints/`
 
 | Dataset | mAP | mAP<sub>50</sub> | mAP<sub>25</sub>  | Download |
 |:-------:|:----------------:|:----------------:|:----:|:--------:|
