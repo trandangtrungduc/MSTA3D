@@ -1,10 +1,13 @@
-# MSTA3D: Multi-scale Twin-Attention for 3D Instance Segmentation
+# [MSTA3D: Multi-scale Twin-Attention for 3D Instance Segmentation](https://arxiv.org/abs/2411.01781)
 
-[MSTA3D: Multi-scale Twin-Attention for 3D Instance Segmentation]()
+Duc Dang Trung Tran, Byeongkeun Kang, Yeejin Lee
 
-Tran Dang Trung Duc, Byeongkeun Kang, Yeejin Lee
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-scannetv2)](https://paperswithcode.com/sota/3d-instance-segmentation-on-scannetv2?p=msta3d-multi-scale-twin-attention-for-3d)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-object-detection-on-scannetv2)](https://paperswithcode.com/sota/3d-object-detection-on-scannetv2?p=msta3d-multi-scale-twin-attention-for-3d)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-scannet200)](https://paperswithcode.com/sota/3d-instance-segmentation-on-scannet200?p=msta3d-multi-scale-twin-attention-for-3d)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-s3dis)](https://paperswithcode.com/sota/3d-instance-segmentation-on-s3dis?p=msta3d-multi-scale-twin-attention-for-3d)
 
-## :electron: Overall Architecture :electron:
+## :electron: Overall Architecture :electron
 
 <img src="docs\overall_structure.png" />
 
@@ -18,10 +21,18 @@ Solution:
 * Using multi-scale superpoint combined with a twin-attention decoder to capture objects of different size and shape.
 * Using spatial constraint regularizer helps the model create a more reliable superpoint mask.
 
-<img src="docs\benchmark_snapshot.png" alt="snapshot" style="zoom:50%;" />
+## :link: Citation :link:
 
-The snapshot from ScanNetV2 benchmark testing server on 11/04/2024.
-
+[Paper (arXiv)](https://arxiv.org/abs/2411.01781) is accepted at ACM Multimedia 2024.
+```
+@inproceedings{tran2024msta3d,
+  title={MSTA3D: Multi-scale Twin-attention for 3D Instance Segmentation},
+  author={Tran, Duc Dang Trung and Kang, Byeongkeun and Lee, Yeejin},
+  booktitle={Proceedings of the 32nd ACM International Conference on Multimedia},
+  pages={1467--1475},
+  year={2024}
+}
+```
 ## :hammer_and_wrench: Installation :hammer_and_wrench:
 
 Requirements
@@ -157,21 +168,7 @@ You can visualize by Open3D or MeshLab with `.ply` file.
 
 ## :rocket: Examples :rocket:
 
-<img src="docs\Example.png" />
-
-## :link: Citation :link:
-
-If you find this work useful in your research, please cite:
-
-```
-@misc{,
-Url = {},
-Author = {Duc Tran Dang Trung, Byeongkeun Kang, Yeejin Lee},
-Title = {MSTA3D: Multi-scale Twin-Attention for 3D Instance Segmentation},
-Publisher = {arXiv},
-Year = {2024},
-}
-```
+<img src="docs\example.png" />
 
 ## :gift: Acknowledgement :gift:
 

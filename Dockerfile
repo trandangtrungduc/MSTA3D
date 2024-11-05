@@ -1,17 +1,15 @@
 FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-devel
 
+WORKDIR /workspace
+COPY . /workspace
+
 RUN apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/3bf863cc.pub \
     && apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64/7fa2af80.pub \
     && apt-get update \
     && apt-get install -y git curl libsparsehash-dev
 
-# Install torch-scatter
 RUN pip install torch-scatter==2.0.9 -f https://data.pyg.org/whl/torch-1.10.0+cu113.html --no-deps
 
-
-WORKDIR /workspace
-COPY . /workspace
-# Install Segmentator
 RUN apt-get remove -y cmake && \
     curl -fsSL https://github.com/Kitware/CMake/releases/download/v3.25.2/cmake-3.25.2-linux-x86_64.sh -o cmake-install.sh && \
     bash cmake-install.sh --skip-license --prefix=/usr/local && \
@@ -31,7 +29,6 @@ RUN git clone https://github.com/Karbo123/segmentator.git \
     && make install \
     && cd ../../..
 
-# Install Python packages
 RUN pip install --no-deps \
     spconv-cu113 \
     gorilla-core \
@@ -47,7 +44,5 @@ RUN pip install --no-deps \
     einops \
     pyviz3d
 
-# Setup MSTA3D & pointgroup_ops
-# CMD ["./docker_train.sh"]
-CMD ["./docker_test.sh"]
+CMD ["bash"]
 
