@@ -2,11 +2,6 @@
 
 Duc Dang Trung Tran, Byeongkeun Kang, Yeejin Lee
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-scannetv2)](https://paperswithcode.com/sota/3d-instance-segmentation-on-scannetv2?p=msta3d-multi-scale-twin-attention-for-3d)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-object-detection-on-scannetv2)](https://paperswithcode.com/sota/3d-object-detection-on-scannetv2?p=msta3d-multi-scale-twin-attention-for-3d)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-scannet200)](https://paperswithcode.com/sota/3d-instance-segmentation-on-scannet200?p=msta3d-multi-scale-twin-attention-for-3d)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/msta3d-multi-scale-twin-attention-for-3d/3d-instance-segmentation-on-s3dis)](https://paperswithcode.com/sota/3d-instance-segmentation-on-s3dis?p=msta3d-multi-scale-twin-attention-for-3d)
-
 ## :electron: Overall Architecture :electron:
 
 <img src="docs\overall_structure.png" />
@@ -165,10 +160,6 @@ python tools/visualize.py --prediction_path output/ --room_name ${SCENE_NAME}
 ```
 
 You can visualize by Open3D or MeshLab with `.ply` file.
-
-## :rocket: Examples :rocket:
-
-<img src="docs\example.png" />
 
 ## :gift: Acknowledgement :gift:
 
