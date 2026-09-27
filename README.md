@@ -164,3 +164,8 @@ You can visualize by Open3D or MeshLab with `.ply` file.
 ## :gift: Acknowledgement :gift:
 
 Sincerely thanks for [SPFormer](https://github.com/sunjiahao1999/SPFormer/tree/main) repository. This repository is build upon them.
+
+## License
+
+[Apache-2.0 License](LICENSE)
+
